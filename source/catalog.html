@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,20 +7,28 @@
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body>
+<body class="page__body">
 
   <header class="page-header">
     <div class="container">
-      <a class="logo" href="index.html">
-        <img class="logo__img" src="#" alt="Логотип Кэт энерджи">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-img" src="#" alt="Логотип Кэт энерджи">
       </a>
       <nav class="menu menu--closed">
-        <button class="menu__btn"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="menu__list">
-          <li class="menu__item">Главная</li>
-          <li class="menu__item">Каталог продукции</li>
-          <li class="menu__item">Подбор программы</li>
-        </ul>
+        <button class="menu__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#"> Главная</a>
+            </li>
+            <li class="menu__item menu__item--active">
+              <a href="catalog.html"> Каталог продукции</a>
+            </li>
+            <li class="menu__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -242,10 +250,10 @@
             </div>
           </li>
 
-          <li class="catalog__item more">
-            <span class="more__title">Показать еще 100500 товаров</span>
-            <span class="more__text">На самом деле вкусов гораздо больше!</span>
-            <button class="more__btn" type="button">Показать все</button>
+          <li class="catalog__item catalog__item--more">
+            <span class="catalog__title">Показать еще 100500 товаров</span>
+            <span class="catalog__text">На самом деле вкусов гораздо больше!</span>
+            <button class="catalog__btn" type="button">Показать все</button>
           </li>
 
         </ul>
@@ -309,19 +317,19 @@
         <img class="page-footer__logo-img" src="#" alt="Логотип Кэт энерджи">
       </a>
       <div class="social">
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в инстаграм</span>
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link" href="#">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <span class="visually-hidden">Мы в фейсбук</span>
             </a>
           </li>
