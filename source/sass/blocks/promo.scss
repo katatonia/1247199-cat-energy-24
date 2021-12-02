@@ -1,0 +1,48 @@
+.promo {
+  position: relative;
+  margin-bottom: 20px;
+  background: url("../../img/mobile/png/index-bg-mobile.png") no-repeat 0 0;
+  //background-color: rgba(104, 183, 56, 0.85);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    width: 280px;
+    min-height: 270px;
+    background: url("../../img/mobile/png/promo.png") no-repeat 0 0;
+  }
+}
+
+.promo__title {
+  font-size: $font-size-36;
+  line-height: 36px;
+  color: $white;
+  text-align: center;
+  padding: {
+    top: 25px;
+    bottom: 25px;
+  }
+  margin: 0;
+}
+
+.promo__text {
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 300px;
+}
+
+.promo__btn {
+  display: block;
+  padding: {
+    top: 7px;
+    bottom: 7px;
+  }
+  color: $white;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  text-align: center;
+}
