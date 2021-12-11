@@ -1,0 +1,64 @@
+.example {
+  padding: {
+    top: 25px;
+    bottom: 40px;
+  }
+  background-color: #eaeaea;
+}
+
+.example__title {
+  font-size: $font-size-36;
+  line-height: 40px;
+  color: $black;
+  margin: 0;
+  padding: {
+    bottom: 40px;
+    left: 20px;
+  };
+}
+
+.example__text {
+  font-family: $arial;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.example__list {
+  margin: {
+    top: 0;
+    bottom: 20px;
+  }
+  justify-content: space-around;
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: {
+    top: 15px;
+    right: 20px;
+    left: 20px;
+  }
+  border: {
+    top: 1px solid $special-grey;
+    right: 1px solid $special-grey;
+    left: 1px solid $special-grey;
+    radius: 3px;
+  }
+}
+
+.example__heading {
+  font-size: $font-size-24;
+  line-height: 24px;
+  color: $black;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.example__desc {
+  font-family: $arial;
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+}

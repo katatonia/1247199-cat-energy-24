@@ -1,0 +1,28 @@
+.contacts {
+  padding: {
+    top: 25px;
+    bottom: 25px;
+  }
+  background-color: $basic-grey;
+}
+
+.contacts .container {
+  justify-content: space-between;
+}
+
+.contacts__title {
+  width: 140px;
+  margin: 0;
+  font-size: $font-size-16;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-family: $arial;
+  width: 140px;
+  margin: 0;
+  font-style: 14px;
+  line-height: 20px;
+}
