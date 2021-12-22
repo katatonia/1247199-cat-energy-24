@@ -12,7 +12,10 @@
 
   <header class="page-header container">
     <div class="page-header__container">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo--img" href="#">
+        <span class="visually-hidden">Логотип магазина Cat Energy</span>
+      </a>
+      <a class="page-header__logo--cat-energy" href="#">
         <span class="visually-hidden">Логотип магазина Cat Energy</span>
       </a>
       <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
@@ -20,13 +23,13 @@
     <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="index.html"> Главная</a>
+            <a href="#"> Главная</a>
           </li>
           <li class="menu__item menu__item--active">
             <a href="catalog.html"> Каталог продукции</a>
           </li>
           <li class="menu__item">
-            <a href="#">Подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
     </nav>
@@ -73,7 +76,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__heading">Контактные данные (владелец кота)</legend>
+            <legend class="form__heading"><span class="form__line">Контактные данные (владелец кота)</span></legend>
             <ul class="form__contact-list">
               <li class="form__contact-list-item">
                 <label class="form__label-text" for="email-field">Email:<sup>*</sup></label>
@@ -89,12 +92,12 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__heading">Комментарий</legend>
+            <legend class="form__heading"><span class="form__line">Комментарий</span></legend>
             <textarea class="form__textarea" name="text" placeholder="Расскажите обо всем повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__heading">Дополнительно</legend>
+            <legend class="form__heading"><span class="form__line">Дополнительно</span></legend>
             <ul class="form__extra-list">
               <li class="form__extra-list-item">
                 <input class="form__input-check" type="checkbox" name="sweetener" id="sweetener-check" checked>
@@ -127,8 +130,8 @@
 
     <section class="contacts">
       <div class="contacts__container container">
-        <h2 class="contacts__title">Приглашаем &nbsp; к сотрудничеству дилеров!</h2>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__text--br">Санкт-Петербург</span></p>
       </div>
       <!-- <div class="contacts__map">
         <iframe src="#"></iframe>
@@ -138,9 +141,9 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <a href="#" class="page-footer__logo-link">
-        <img class="page-footer__logo-img" src="img/mobile/logo-footer.svg" alt="Логотип Кэт энерджи" width="130" height="25">
+        <img class="page-footer__logo-img" src="img/mobile/logo-cat-energy.svg" alt="Логотип Кэт энерджи" width="130" height="25">
       </a>
       <div class="social">
         <ul class="social__list">

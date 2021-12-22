@@ -12,7 +12,10 @@
 
   <header class="page-header container">
     <div class="page-header__container">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo--img" href="index.html">
+        <span class="visually-hidden">Логотип магазина Cat Energy</span>
+      </a>
+      <a class="page-header__logo--cat-energy" href="index.html">
         <span class="visually-hidden">Логотип магазина Cat Energy</span>
       </a>
       <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
@@ -49,7 +52,7 @@
             </a>
             <div class="catalog__wrapper">
               <a href="#">
-                <h2 class="catalog__heading">Cat energy &nbsp; pro 500 г</h2>
+                <h2 class="catalog__heading">Cat energy pro 500 г</h2>
               </a>
               <ul class="catalog__specs-list">
                 <li class="catalog__specs-item">
@@ -79,7 +82,7 @@
             </a>
             <div class="catalog__wrapper">
               <a href="#">
-                <h2 class="catalog__heading">Cat energy &nbsp; pro 1000 г</h2>
+                <h2 class="catalog__heading">Cat energy pro 1000 г</h2>
               </a>
               <ul class="catalog__specs-list">
                 <li class="catalog__specs-item">
@@ -109,7 +112,7 @@
             </a>
             <div class="catalog__wrapper">
               <a href="#">
-                <h2 class="catalog__heading">Cat energy &nbsp; pro 500 г</h2>
+                <h2 class="catalog__heading">Cat energy pro 500 г</h2>
               </a>
               <ul class="catalog__specs-list">
                 <li class="catalog__specs-item">
@@ -139,7 +142,7 @@
             </a>
             <div class="catalog__wrapper">
               <a href="#">
-                <h2 class="catalog__heading">Cat energy &nbsp; pro 1000 г</h2>
+                <h2 class="catalog__heading">Cat energy pro 1000 г</h2>
               </a>
               <ul class="catalog__specs-list">
                 <li class="catalog__specs-item">
@@ -169,7 +172,7 @@
             </a>
             <div class="catalog__wrapper">
               <a href="#">
-                <h2 class="catalog__heading">Cat energy &nbsp; slim 500 г</h2>
+                <h2 class="catalog__heading">Cat energy slim 500 г</h2>
               </a>
               <ul class="catalog__specs-list">
                 <li class="catalog__specs-item">
@@ -199,7 +202,7 @@
             </a>
             <div class="catalog__wrapper">
               <a href="#">
-                <h2 class="catalog__heading">Cat energy &nbsp; pro 1000 г</h2>
+                <h2 class="catalog__heading">Cat energy pro 1000 г</h2>
               </a>
               <ul class="catalog__specs-list">
                 <li class="catalog__specs-item">
@@ -229,7 +232,7 @@
             </a>
             <div class="catalog__wrapper">
               <a href="#">
-                <h2 class="catalog__heading">Cat energy &nbsp; slim 500 г</h2>
+                <h2 class="catalog__heading">Cat energy slim 500 г</h2>
               </a>
               <ul class="catalog__specs-list">
                 <li class="catalog__specs-item">
@@ -262,41 +265,51 @@
 
     <section class="advice">
       <div class="container">
+        <div class="advice__container">
         <h2 class="advice__title">Дополнительные товары</h2>
         <ul class="advice__list">
           <li class="advice__item">
+            <div class="advice__wrapper">
             <h2 class="advice__heading">Сахарозаменитель</h2>
             <div class="advice__specs">
               <span class="advice__specs-item">1 упаковка (100 г)</span>
               <span class="advice__specs-item">200 р.</span>
             </div>
+            </div>
             <button class="advice__btn">Заказать</button>
           </li>
           <li class="advice__item">
+            <div class="advice__wrapper">
             <h2 class="advice__heading">Питьевая вода</h2>
             <div class="advice__specs">
               <span class="advice__specs-item">5 литров</span>
               <span class="advice__specs-item">50 р.</span>
             </div>
+            </div>
             <button class="advice__btn">Заказать</button>
           </li>
           <li class="advice__item">
+            <div class="advice__wrapper">
             <h2 class="advice__heading">Молоко</h2>
             <div class="advice__specs">
               <span class="advice__specs-item">1 литр</span>
               <span class="advice__specs-item">100 р.</span>
             </div>
+            </div>
             <button class="advice__btn">Заказать</button>
           </li>
           <li class="advice__item">
+            <div class="advice__wrapper">
             <h2 class="advice__heading">Витамины</h2>
             <div class="advice__specs">
               <span class="advice__specs-item">1 упаковка (30 г)</span>
               <span class="advice__specs-item">300 р.</span>
             </div>
+          </div>
             <button class="advice__btn">Заказать</button>
           </li>
         </ul>
+      </div>
       </div>
     </section>
 
@@ -311,8 +324,8 @@
 
     <section class="contacts">
       <div class="contacts__container container">
-        <h2 class="contacts__title">Приглашаем  &nbsp; к сотрудничеству дилеров!</h2>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__text--br">Санкт-Петербург</span></p>
       </div>
       <!-- <div class="contacts__map">
         <iframe src="#"></iframe>
@@ -322,9 +335,9 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <a href="#" class="page-footer__logo-link">
-        <img class="page-footer__logo-img" src="img/mobile/logo-footer.svg" alt="Логотип Кэт энерджи" width="130" height="25">
+        <img class="page-footer__logo-img" src="img/mobile/logo-cat-energy.svg" alt="Логотип Кэт энерджи" width="130" height="25">
       </a>
       <div class="social">
         <ul class="social__list">

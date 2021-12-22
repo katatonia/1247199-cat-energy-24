@@ -3,27 +3,80 @@
     top: 30px;
     bottom: 30px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: {
+      top: 65px;
+      bottom: 70px;
+    }
+  }
 }
 
 .form__title {
   font-size: 36px;
   line-height: 36px;
   color: $black;
-  padding: {
-    bottom: 35px;
-    left: 20px;
-  }
+  padding-bottom: 35px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: {
+      bottom: 55px;
+      left: 0;
+    }
+  }
 }
 
 .form__heading {
-  padding-bottom: 35px;
+  max-width: 185px;
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   color: $black;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-left: 40px;
+  }
+}
+
+.form__line {
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid #68b738;
+    margin: {
+      top: 20px;
+      left: -100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid #68b738;
+    margin: {
+      top: 20px;
+      left: 20px;
+    }
+  }
 }
 
 .form__text {
+  max-width: 230px;
   color: $black;
   padding: {
     bottom: 40px;
@@ -31,6 +84,13 @@
   }
   margin: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 325px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 56px;
+  }
 }
 
 .form__label-text {
@@ -42,6 +102,11 @@
     right: 10px;
     bottom: 0;
     left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -63,6 +128,11 @@
     line-height: $basic-line-height;
     color: $basic-color;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__fieldset {
@@ -75,6 +145,10 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .form__data-list-item {
@@ -93,6 +167,17 @@
     top: 20px;
     bottom: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 630px;
+    padding: {
+      top: 30px;
+      bottom: 30px;
+      left: 30px;
+    }
+    margin-bottom: 75px;
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .form__radio-list-item {
@@ -109,6 +194,11 @@
   color: #222222;
   text-transform: uppercase;
   padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__input-radio {
@@ -138,11 +228,26 @@
 .form__contact-list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: {
+      top: 75px;
+      bottom: 75px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .form__contact-list-item {
   display: flex;
   margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 
 .form__textarea {
@@ -158,10 +263,48 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: {
+      top: 10px;
+      left: 20px;
+    }
+    margin: {
+      top: 75px;
+      bottom: 65px;
+    }
+
+    &::placeholder {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 170px;
+  }
+}
+
+.form__extra-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: {
+      top: 60px;
+      bottom: 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .form__extra-list-item {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .form__label-extra {
@@ -199,6 +342,11 @@
 .form__submit {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .form__submit-btn {
@@ -215,6 +363,18 @@
   }
   margin-bottom: 20px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: {
+      top: 15px;
+      bottom: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
 
 .form__required-field {
@@ -222,4 +382,8 @@
   line-height: 16px;
   align-self: center;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }

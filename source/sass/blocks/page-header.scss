@@ -40,6 +40,11 @@
     height: 50px;
     background: url("../../img/tablet/logo.svg") no-repeat 0 0;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 60px;
+  }
 }
 
 .page-header__logo--cat-energy {
