@@ -12,6 +12,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -54,19 +55,17 @@ li {
 
 .container {
   box-sizing: border-box;
-  max-width: 1400px;
-  margin: {
-    left: auto;
-    right: auto;
-  }
-  padding: {
-    left: 20px;
-    right: 20px;
-  }
-}
+  max-width: 748px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 
-.flex {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  @media (min-width: 1024px) {
+    max-width: 1004px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1260px;
+  }
 }

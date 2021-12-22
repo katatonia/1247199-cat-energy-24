@@ -25,7 +25,7 @@
       position: absolute;
       width: 30px;
       height: 30px;
-      background: url("../../img/mobile/svg/plus-show-more.svg") no-repeat 0 0;
+      background: url("../../img/mobile/catalog-plus-icon.svg") no-repeat 0 0;
       top: 25px;
       left: 120px;
     }
@@ -91,7 +91,9 @@
   &--grey {
     font-family: $basic-font-family;
     font-size: $font-size-16;
+    color: $basic-color;
     line-height: 20px;
+    background-color: $basic-grey;
     text-transform: uppercase;
     text-align: center;
     padding: {
@@ -106,4 +108,3 @@
   display: flex;
   justify-content: space-between;
 }
-

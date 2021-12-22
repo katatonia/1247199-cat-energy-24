@@ -5,13 +5,16 @@
   }
 }
 
+.benefit__container {
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85) 50%, $white 50%),
+    url("../../img/mobile/benefit-bg.png") no-repeat 0 0;
+  background-size: 100%;
+}
+
 .benefit__text {
   font-family: $arial;
   color: $white;
-  width: 280px;
-  height: 290px;
   margin: 0;
   text-align: center;
-  background: url("../../img/mobile/png/benefit-bg.png") no-repeat 0 0;
-  //background-color: rgba(104, 183, 56, 0.85);
 }
