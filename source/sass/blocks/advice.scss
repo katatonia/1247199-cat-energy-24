@@ -38,10 +38,10 @@
 .advice__item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $special-grey;
 
   &:first-child {
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $special-grey;
   }
 
   @media (min-width: $tablet-width) {
@@ -52,14 +52,14 @@
       left: 30px;
     }
     border: {
-      top: 1px solid #cdcdcd;
-      right: 1px solid #cdcdcd;
+      top: 1px solid $special-grey;
+      right: 1px solid $special-grey;
       bottom: none;
-      left: 1px solid #cdcdcd;
+      left: 1px solid $special-grey;
     }
 
     &:last-child {
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid $special-grey;
     }
   }
 
@@ -72,8 +72,8 @@
 }
 
 .advice__heading {
-  font-size: $font-size-16;
-  color: #222222;
+  font-size: 16px;
+  color: $special-dark-grey;
   text-transform: uppercase;
   margin: {
     top: 13px;
@@ -108,8 +108,7 @@
 
 .advice__btn {
   color: $white;
-  font-family: $basic-font-family;
-  font-size: $font-size-16;
+  font-size: 16px;
   line-height: 20px;
   border: none;
   padding: {

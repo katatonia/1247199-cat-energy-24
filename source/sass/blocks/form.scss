@@ -56,7 +56,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    border-top: 2px solid #68b738;
+    border-top: 2px solid $basic-green;
     margin: {
       top: 20px;
       left: -100%;
@@ -67,7 +67,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    border-top: 2px solid #68b738;
+    border-top: 2px solid $basic-green;
     margin: {
       top: 20px;
       left: 20px;
@@ -95,7 +95,7 @@
 
 .form__label-text {
   flex-shrink: 0;
-  font-size: $font-size-16;
+  font-size: 16px;
   text-transform: uppercase;
   margin: {
     top: 0;
@@ -112,7 +112,7 @@
 
 .form__input-text {
   flex-grow: 1;
-  font-size: $font-size-16;
+  font-size: 16px;
   text-transform: uppercase;
   margin: 0;
   border: 1px solid #e7e7e7;
@@ -123,10 +123,16 @@
   };
 
   &::placeholder {
-    font-family: $basic-font-family;
-    font-size: $font-size-16;
-    line-height: $basic-line-height;
-    color: $basic-color;
+    font-size: 16px;
+    color: #444444;
+  }
+
+  &:hover {
+    border: 2px solid $special-grey;
+  }
+
+  &:focus {
+    border-color: #444444;
   }
 
   @media (min-width: $tablet-width) {
@@ -176,7 +182,7 @@
       left: 30px;
     }
     margin-bottom: 75px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special-grey;
   }
 }
 
@@ -190,8 +196,8 @@
 
 .form__label-radio {
   position: relative;
-  font-size: $font-size-16;
-  color: #222222;
+  font-size: 16px;
+  color: $special-dark-grey;
   text-transform: uppercase;
   padding-left: 45px;
 
@@ -257,9 +263,7 @@
   margin-bottom: 22px;
 
   &::placeholder {
-    font-family: $basic-font-family;
-    font-size: $font-size-16;
-    color: $basic-color;
+    font-size: 16px;
     text-transform: uppercase;
     text-align: center;
   }
@@ -310,7 +314,7 @@
 .form__label-extra {
   position: relative;
   color: $black;
-  font-size: $font-size-16;
+  font-size: 16px;
   text-transform: uppercase;
   padding-left: 40px;
 }
@@ -350,7 +354,6 @@
 }
 
 .form__submit-btn {
-  font-family: $basic-font-family;
   background-color: $basic-green;
   color: $white;
   line-height: 20px;

@@ -55,7 +55,7 @@
 
 .promo__title {
   position: relative;
-  font-size: $font-size-36;
+  font-size: 36px;
   line-height: 36px;
   color: $white;
   text-align: center;
@@ -119,6 +119,14 @@
   text-transform: uppercase;
   background-color: $basic-green;
   text-align: center;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 245px;

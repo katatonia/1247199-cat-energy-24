@@ -33,6 +33,14 @@
   background: url("../../img/mobile/logo-img.png") no-repeat 0 0;
   background-position: center;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;

@@ -43,7 +43,6 @@
 }
 
 .menu__item {
-  position: relative;
   width: 100%;
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
@@ -59,15 +58,22 @@
     border: none;
     padding: 0;
 
-    &:first-child::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: -10px;
-      width: 64px;
-      height: 2px;
-      background-color: $basic-green;
-      transform: translateX(-50%);
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:active {
+      border-bottom: 2px solid $white;
     }
   }
 }

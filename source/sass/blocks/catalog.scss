@@ -58,7 +58,7 @@
     top: 20px;
     bottom: 25px;
   }
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $special-grey;
 
   &--more {
     position: relative;
@@ -91,11 +91,11 @@
       bottom: 40px;
       left: 40px;
     }
-    background-color: #f2f2f2;
+    background-color: $basic-grey;
 
     &--more {
       background-color: $white;
-      border: 1px solid #f2f2f2;
+      border: 1px solid $basic-grey;
 
       &::before {
         top: 25%;
@@ -112,7 +112,7 @@
 }
 
 .catalog__heading {
-  color: #222222;
+  color: $special-dark-grey;
   text-transform: uppercase;
   line-height: 20px;
   margin: 0;
@@ -148,7 +148,7 @@
     font-size: 16px;
     line-height: 16px;
     padding-bottom: 10px;
-    border-bottom: 1px dotted #cdcdcd;
+    border-bottom: 1px dotted $special-grey;
   }
 }
 
@@ -185,7 +185,6 @@
 .catalog__btn {
   width: 100%;
   grid-area: btn;
-  font-family: $basic-font-family;
   color: $white;
   text-transform: uppercase;
   background-color: $basic-green;
@@ -196,8 +195,7 @@
   border: none;
 
   &--grey {
-    font-family: $basic-font-family;
-    font-size: $font-size-16;
+    font-size: 16px;
     color: $basic-color;
     line-height: 20px;
     background-color: $basic-grey;
@@ -208,6 +206,14 @@
       bottom: 10px;
     }
     border: none;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
