@@ -22,6 +22,12 @@
     background-color: $basic-grey;
     padding-bottom: 75px;
   }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 100%;
+  }
 }
 
 .example__container {

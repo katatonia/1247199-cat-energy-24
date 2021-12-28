@@ -1,4 +1,12 @@
 .contacts {
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
   padding: {
     top: 25px;
     bottom: 25px;
@@ -9,13 +17,20 @@
       top: 55px;
       bottom: 55px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    min-width: 565px;
+    z-index: 1;
+    padding: {
+      top: 50px;
+      right: 80px;
+      bottom: 50px;
+      left: 80px;
+    }
     background-color: $white;
   }
-}
-
-.contacts__container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .contacts__title {
@@ -49,5 +64,15 @@
       display: inline-block;
       padding-top: 20px;
     }
+  }
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
 }

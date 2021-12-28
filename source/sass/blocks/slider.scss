@@ -41,10 +41,18 @@
   line-height: 20px;
   color: $black;
 
+  &:hover {
+    border-bottom: 1px solid $black;
+  }
+
+  &:active {
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 29px;
-    border-bottom: 1px dotted #dcdcdc;
+    border-bottom: 1px dotted $black;
   }
 }
 

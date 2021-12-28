@@ -127,8 +127,9 @@
   background-color: $basic-green;
   text-align: center;
 
-  &:hover {
-    background-color: #5eaa2f;
+  &:hover,
+  &:focus {
+    background-color: $special-green;
   }
 
   &:active {
