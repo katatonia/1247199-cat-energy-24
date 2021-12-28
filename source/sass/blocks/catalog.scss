@@ -35,10 +35,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-column-gap: 60px;
-  grid-row-gap: 140px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-row-gap: 140px;
   }
 
   @media (min-width: $desktop-width) {
@@ -184,6 +184,7 @@
 
 .catalog__btn {
   width: 100%;
+  font-family: $OswaldRegular;
   grid-area: btn;
   color: $white;
   text-transform: uppercase;
@@ -192,13 +193,14 @@
     top: 10px;
     bottom: 10px;
   }
+  margin-top: auto;
   border: none;
 
   &--grey {
     font-size: 16px;
-    color: $basic-color;
     line-height: 20px;
     background-color: $basic-grey;
+    color: $special-dark-grey;
     text-transform: uppercase;
     text-align: center;
     padding: {
@@ -221,4 +223,3 @@
     line-height: 20px;
   }
 }
-

@@ -12,6 +12,29 @@
   }
 }
 
+.form__form {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 100%;
+
+    &--half {
+      flex-basis: calc(50% - 40px);
+      flex-shrink: 0;
+    }
+  }
+}
+
 .form__title {
   font-size: 36px;
   line-height: 36px;
@@ -111,6 +134,7 @@
 }
 
 .form__input-text {
+  font-family: $OswaldRegular;
   flex-grow: 1;
   font-size: 16px;
   text-transform: uppercase;
@@ -139,12 +163,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
-
-.form__fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
 }
 
 .form__data-list {
@@ -244,6 +262,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -252,11 +271,12 @@
   margin-bottom: 13px;
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    flex-basis: calc(50% - 40px);
   }
 }
 
 .form__textarea {
+  font-family: $OswaldRegular;
   width: 100%;
   border: 1px solid #e7e7e7;
   min-height: 150px;
@@ -351,9 +371,14 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 100%;
+  }
 }
 
 .form__submit-btn {
+  font-family: $OswaldRegular;
   background-color: $basic-green;
   color: $white;
   line-height: 20px;

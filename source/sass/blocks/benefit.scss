@@ -10,6 +10,12 @@
       bottom: 75px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    min-width: 245px;
+    margin: 0;
+  }
 }
 
 .benefit__container {

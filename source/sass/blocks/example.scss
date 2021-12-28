@@ -12,17 +12,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: {
-      top: 0;
-      bottom:70px;
-    }
     border-top: none;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    background-color: $basic-grey;
+    padding-bottom: 75px;
   }
 }
 
 .example__container {
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
+    flex-basis: 50%;
   }
 }
 
@@ -87,6 +91,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 

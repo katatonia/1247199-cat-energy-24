@@ -39,9 +39,16 @@
 
   @media (min-width: $desktop-width) {
     padding: {
-      top: 30px;
+      top: 120px;
       bottom: 280px;
     }
+
+    background-image:
+      url("../../img/desktop/promo-bg.jpg"),
+      linear-gradient(to left, #62a53b 50%, #ffffff 50%);
+    background-repeat: no-repeat;
+    background-color: rgb(98, 165, 59);
+    background-position: right 0;
 
     &::after {
       content: "";
