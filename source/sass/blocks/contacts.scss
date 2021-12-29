@@ -3,26 +3,43 @@
     top: 25px;
     bottom: 25px;
   }
-  background-color: $basic-grey;
 }
 
-.contacts .container {
+.contacts__container {
+  display: flex;
   justify-content: space-between;
 }
 
 .contacts__title {
-  width: 140px;
+  max-width: 140px;
   margin: 0;
   font-size: $font-size-16;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__text {
+  max-width: 140px;
   font-family: $arial;
-  width: 140px;
   margin: 0;
   font-style: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    &--br {
+      display: inline-block;
+      padding-top: 20px;
+    }
+  }
 }

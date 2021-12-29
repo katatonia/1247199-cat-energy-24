@@ -4,6 +4,26 @@
     bottom: 40px;
   }
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background-color: $white;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: {
+      top: 0;
+      bottom:70px;
+    }
+    border-top: none;
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .example__title {
@@ -15,26 +35,93 @@
     bottom: 40px;
     left: 20px;
   };
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    padding: {
+      top: 45px;
+      bottom: 60px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+    border-color: $white;
+  }
 }
 
 .example__text {
   font-family: $arial;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    padding-top: 70px;
+  }
 }
 
 .example__list {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   margin: {
     top: 0;
     bottom: 20px;
   }
-  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.example__subtitle {
+  padding-bottom: 40px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 200px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-transform: uppercase;
+    padding: 0;
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.example__items {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .example__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: {
     top: 15px;
     right: 20px;

@@ -1,5 +1,4 @@
 .menu {
-  position: relative;
   font: {
     family: "OswaldMedium", "Arial", sans-serif;
     size: 20px;
@@ -7,56 +6,69 @@
   color: $black;
   background-color: $white;
   text-transform: uppercase;
-}
+  border-top: 1px solid #e6e6e6;
 
-.menu__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    border: none;
+    background-color: transparent;
+  }
 }
 
 .menu__list {
   padding: 0;
   margin: 0;
+  display: flex;
   flex-direction: column;
   align-items: center;
-
-  &--opened {
-    display: flex;
-  }
 
   &--closed {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    min-width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    min-width: 480px;
+  }
 }
 
 .menu__item {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
   padding: {
     top: 20px;
     bottom: 20px;
   }
-}
 
-.menu__toggle {
-  border: none;
-  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    padding: 0;
 
-  &--opened {
-    position: absolute;
-    bottom: 180px;
-    right: 0;
-    width: 25px;
-    height: 30px;
-    background: url("../../img/mobile/svg/toggle-close.svg") no-repeat 0 0;
-  }
-
-  &--closed {
-    position: absolute;
-    bottom: 180px;
-    right: 0;
-    width: 25px;
-    height: 30px;
-    background: url("../../img/mobile/svg/toggle-burger.svg") no-repeat 0 0;
+    &:first-child::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      width: 64px;
+      height: 2px;
+      background-color: $basic-green;
+      transform: translateX(-50%);
+    }
   }
 }
 

@@ -10,7 +10,6 @@
   line-height: 36px;
   color: $black;
   padding: {
-    top: 25px;
     bottom: 35px;
     left: 20px;
   }
@@ -35,6 +34,7 @@
 }
 
 .form__label-text {
+  flex-shrink: 0;
   font-size: $font-size-16;
   text-transform: uppercase;
   margin: {
@@ -121,7 +121,7 @@
     height: 30px;
     left: 0;
     bottom: 0;
-    background: url("../../img/mobile/svg/radio-btn.svg") no-repeat 0 0;
+    background: url("../../img/mobile/radio-btn.svg") no-repeat 0 0;
   }
 
   &:checked + .form__label-radio::before {
@@ -131,7 +131,7 @@
     height: 30px;
     left: 0;
     bottom: 0;
-    background: url("../../img/mobile/svg/radio-active.svg") no-repeat 0 0;
+    background: url("../../img/mobile/radio-active.svg") no-repeat 0 0;
   }
 }
 
@@ -146,7 +146,7 @@
 }
 
 .form__textarea {
-  width: 280px;
+  width: 100%;
   border: 1px solid #e7e7e7;
   min-height: 150px;
   margin-bottom: 22px;
@@ -182,7 +182,7 @@
     height: 30px;
     left: 0;
     bottom: 0;
-    background: url("../../img/mobile/svg/checkbox.svg") no-repeat 0 0;
+    background: url("../../img/mobile/checkbox.svg") no-repeat 0 0;
   }
 
   &:checked + .form__label-extra::before {
@@ -192,7 +192,7 @@
     height: 30px;
     left: 0;
     bottom: 0;
-    background: url("../../img/mobile/svg/checkbox-active.svg") no-repeat 0 0;
+    background: url("../../img/mobile/checkbox-active.svg") no-repeat 0 0;
   }
 }
 
@@ -223,4 +223,3 @@
   align-self: center;
   color: $black;
 }
-

@@ -10,28 +10,26 @@
 
 <body class="page__body">
 
-  <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/mobile/svg/logo-header.svg" alt="Логотип Кэт энерджи" width="190" height="35">
+  <header class="page-header container">
+    <div class="page-header__container">
+      <a class="page-header__logo" href="#">
+        <span class="visually-hidden">Логотип магазина Cat Energy</span>
       </a>
-      <nav class="menu">
-        <button class="menu__toggle menu__toggle--closed"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="menu__wrapper">
-          <ul class="menu__list flex">
-            <li class="menu__item">
-              <a href="index.html"> Главная</a>
-            </li>
-            <li class="menu__item menu__item--active">
-              <a href="#"> Каталог продукции</a>
-            </li>
-            <li class="menu__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
     </div>
+    <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="index.html"> Главная</a>
+          </li>
+          <li class="menu__item menu__item--active">
+            <a href="#"> Каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+    </nav>
   </header>
 
   <main class="page-main">
@@ -46,7 +44,7 @@
               <!-- <picture>
                 <source media="#" srcset="#">
                 <source media="#" srcset="#"> -->
-                <img src="img/mobile/jpg/chiken-500.jpg" alt="Фото товара" width="68" height="86">
+                <img src="img/mobile/catalog-chiken-500.jpg" alt="Фото товара" width="68" height="86">
               <!-- </picture> -->
             </a>
             <div class="catalog__wrapper">
@@ -76,7 +74,7 @@
               <!-- <picture> -->
                 <!-- <source media="#" srcset="#"> -->
                 <!-- <source media="#" srcset="#"> -->
-                <img src="img/mobile/jpg/chiken-1000.jpg" alt="Фото товара" width="84" height="100">
+                <img src="img/mobile/catalog-chiken-1000.jpg" alt="Фото товара" width="84" height="100">
               <!-- </picture> -->
             </a>
             <div class="catalog__wrapper">
@@ -106,7 +104,7 @@
               <!-- <picture>
                 <source media="#" srcset="#">
                 <source media="#" srcset="#"> -->
-                <img src="img/mobile/jpg/fish-500.jpg" alt="Фото товара" width="68" height="86">
+                <img src="img/mobile/catalog-fish-500.jpg" alt="Фото товара" width="68" height="86">
               <!-- </picture> -->
             </a>
             <div class="catalog__wrapper">
@@ -136,7 +134,7 @@
               <!-- <picture>
                 <source media="#" srcset="#">
                 <source media="#" srcset="#"> -->
-                <img src="img/mobile/jpg/fish-1000.jpg" alt="Фото товара" width="84" height="100">
+                <img src="img/mobile/catalog-fish-1000.jpg" alt="Фото товара" width="84" height="100">
               <!-- </picture> -->
             </a>
             <div class="catalog__wrapper">
@@ -166,7 +164,7 @@
               <!-- <picture>
                 <source media="#" srcset="#">
                 <source media="#" srcset="#"> -->
-                <img src="img/mobile/jpg/buckwheat-500.jpg" alt="Фото товара" width="68" height="86">
+                <img src="img/mobile/catalog-buckwheat-500.jpg" alt="Фото товара" width="68" height="86">
               <!-- </picture> -->
             </a>
             <div class="catalog__wrapper">
@@ -196,7 +194,7 @@
               <!-- <picture>
                 <source media="#" srcset="#">
                 <source media="#" srcset="#"> -->
-                <img src="img/mobile/jpg/buckwheat-1000.jpg" alt="Фото товара" width="84" height="100">
+                <img src="img/mobile/catalog-buckwheat-1000.jpg" alt="Фото товара" width="84" height="100">
               <!-- </picture> -->
             </a>
             <div class="catalog__wrapper">
@@ -226,7 +224,7 @@
               <!-- <picture>
                 <source media="#" srcset="#">
                 <source media="#" srcset="#"> -->
-                <img src="img/mobile/jpg/rice-500.jpg" alt="Фото товара" width="68" height="86">
+                <img src="img/mobile/catalog-rice-500.jpg" alt="Фото товара" width="68" height="86">
               <!-- </picture> -->
             </a>
             <div class="catalog__wrapper">
@@ -268,7 +266,7 @@
         <ul class="advice__list">
           <li class="advice__item">
             <h2 class="advice__heading">Сахарозаменитель</h2>
-            <div class="advice__specs flex">
+            <div class="advice__specs">
               <span class="advice__specs-item">1 упаковка (100 г)</span>
               <span class="advice__specs-item">200 р.</span>
             </div>
@@ -276,7 +274,7 @@
           </li>
           <li class="advice__item">
             <h2 class="advice__heading">Питьевая вода</h2>
-            <div class="advice__specs flex">
+            <div class="advice__specs">
               <span class="advice__specs-item">5 литров</span>
               <span class="advice__specs-item">50 р.</span>
             </div>
@@ -284,7 +282,7 @@
           </li>
           <li class="advice__item">
             <h2 class="advice__heading">Молоко</h2>
-            <div class="advice__specs flex">
+            <div class="advice__specs">
               <span class="advice__specs-item">1 литр</span>
               <span class="advice__specs-item">100 р.</span>
             </div>
@@ -292,7 +290,7 @@
           </li>
           <li class="advice__item">
             <h2 class="advice__heading">Витамины</h2>
-            <div class="advice__specs flex">
+            <div class="advice__specs">
               <span class="advice__specs-item">1 упаковка (30 г)</span>
               <span class="advice__specs-item">300 р.</span>
             </div>
@@ -304,14 +302,16 @@
 
     <section class="benefit">
       <div class="container">
-        <h2 class="visually-hidden">Акция</h2>
-        <p class="benefit__text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="benefit__container">
+          <h2 class="visually-hidden">Акция</h2>
+          <p class="benefit__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
 
     <section class="contacts">
-      <div class="container flex">
-        <h2 class="contacts__title">Приглашаем к сотруничеству дилеров!</h2>
+      <div class="contacts__container container">
+        <h2 class="contacts__title">Приглашаем  &nbsp; к сотрудничеству дилеров!</h2>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <!-- <div class="contacts__map">
@@ -324,10 +324,10 @@
   <footer class="page-footer">
     <div class="container">
       <a href="#" class="page-footer__logo-link">
-        <img class="page-footer__logo-img" src="img/mobile/svg/logo-footer.svg" alt="Логотип Кэт энерджи" width="130" height="25">
+        <img class="page-footer__logo-img" src="img/mobile/logo-footer.svg" alt="Логотип Кэт энерджи" width="130" height="25">
       </a>
       <div class="social">
-        <ul class="social__list flex">
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
@@ -345,7 +345,7 @@
           </li>
         </ul>
       </div>
-      <div class="copyright flex">
+      <div class="copyright">
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>

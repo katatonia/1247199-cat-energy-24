@@ -10,38 +10,37 @@
 
 <body class="page__body">
 
-  <header class="page-header">
-    <div class="container">
-      <a href="#" class="page-header__logo">
-        <img class="page-header__logo-img" src="img/mobile/svg/logo-header.svg" alt="Логотип Кэт энерджи" width="190" height="35">
+  <header class="page-header container">
+    <div class="page-header__container">
+      <a class="page-header__logo--img" href="#">
+        <span class="visually-hidden">Логотип магазина Cat Energy</span>
       </a>
-      <nav class="menu">
-        <button class="menu__toggle menu__toggle--opened"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="menu__wrapper">
-          <ul class="menu__list flex">
-            <li class="menu__item">
-              <a href="#"> Главная</a>
-            </li>
-            <li class="menu__item menu__item--active">
-              <a href="catalog.html"> Каталог продукции</a>
-            </li>
-            <li class="menu__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <a class="page-header__logo--cat-energy" href="#">
+        <span class="visually-hidden">Логотип магазина Cat Energy</span>
+      </a>
+      <button class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
     </div>
+    <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#"> Главная</a>
+          </li>
+          <li class="menu__item menu__item--active">
+            <a href="catalog.html"> Каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+    </nav>
   </header>
 
   <main class="page-main">
 
-    <section class="promo">
-      <div class="container">
+    <section class="promo container">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <a class="promo__btn" href="form.html">Подобрать программу</a>
-      </div>
     </section>
 
     <section class="products">
@@ -78,47 +77,52 @@
     <section class="example">
       <div class="container">
         <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Живой пример Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-          Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-          спит по 16 часов в день.</p>
-        <dl class="example__list flex">
-          <div class="example__item">
-            <dt class="example__heading">5 кг</dt>
-            <dd class="example__desc">снижение веса</dd>
+        <div class="example__container">
+          <p class="example__text">Живой пример Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+            спит по 16 часов в день.</p>
+          <dl class="example__list">
+            <h2 class="example__subtitle">Затраты на питание: 15000 руб.</h2>
+            <div class="example__items">
+            <div class="example__item">
+              <dt class="example__heading">5 кг</dt>
+              <dd class="example__desc">снижение веса</dd>
+            </div>
+            <div class="example__item">
+              <dt class="example__heading">60 дней</dt>
+              <dd class="example__desc">затрачено времени</dd>
+            </div>
           </div>
-          <div class="example__item">
-            <dt class="example__heading">60 дней</dt>
-            <dd class="example__desc">затрачено времени</dd>
-          </div>
-        </dl>
-        <div class="slider">
-          <h2 class="slider__heading">Затраты на питание: 15000 руб.</h2>
-          <!-- <ul class="slider__list">
-            <li class="slider__item">
-              <img class="slider__img" src="#" alt="Фото кота «до»">
-            </li>
-            <li class="slider__item">
-              <img class="slider__img" src="#" alt="Фото кота «после»">
-            </li>
-          </ul> -->
-          <picture class="slider__img">
-            <source media="#" srcset="#">
-            <source media="#" srcset="#">
-            <img src="img/mobile/png/before-mobile.png" alt="Фото кота «до»" width="280" height="230">
-          </picture>
-          <div class="slider__range">
-            <span class="slider__text">Было</span>
-            <div class="slider__scale"></div>
-            <span class="slider__text">Стало</span>
-          </div>
+          </dl>
+        </div>
+      </div>
+      <div class="slider">
+        <!-- <ul class="slider__list">
+          <li class="slider__item">
+            <img class="slider__img" src="#" alt="Фото кота «до»">
+          </li>
+          <li class="slider__item">
+            <img class="slider__img" src="#" alt="Фото кота «после»">
+          </li>
+        </ul> -->
+        <picture>
+          <source media="#" srcset="#">
+          <source media="#" srcset="#">
+          <img  class="slider__img" src="img/mobile/slider-cat.png" alt="Фото кота «до»">
+        </picture>
+        <div class="slider__range">
+          <span class="slider__text">Было</span>
+          <div class="slider__scale"></div>
+          <!-- <input type="range"> -->
+          <span class="slider__text">Стало</span>
         </div>
       </div>
     </section>
 
-    <section class="contacts">
-      <div class="container flex">
-        <h2 class="contacts__title">Приглашаем к сотруничеству дилеров!</h2>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="contacts container">
+      <div class="contacts__container">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__text--br">Санкт-Петербург</span></p>
       </div>
       <!-- <div class="contacts__map">
         <iframe src="#"></iframe>
@@ -128,12 +132,12 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <a href="#" class="page-footer__logo-link">
-        <img class="page-footer__logo-img" src="img/mobile/svg/logo-footer.svg" alt="Логотип Кэт энерджи" width="130" height="25">
+        <img class="page-footer__logo-img" src="img/mobile/logo-cat-energy.svg" alt="Логотип Кэт энерджи" width="130" height="25">
       </a>
       <div class="social">
-        <ul class="social__list flex">
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
@@ -151,7 +155,7 @@
           </li>
         </ul>
       </div>
-      <div class="copyright flex">
+      <div class="copyright">
         <p class="copyright__text">HTML Academy</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
