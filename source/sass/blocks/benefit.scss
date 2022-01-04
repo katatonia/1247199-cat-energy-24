@@ -1,20 +1,68 @@
 .benefit {
-  padding: {
+  margin: {
     top: 35px;
     bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: {
+      top: 75px;
+      bottom: 75px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    min-width: 245px;
+    margin: 0;
   }
 }
 
 .benefit__container {
-  background:
-    linear-gradient(rgba(104, 183, 56, 0.85) 50%, $white 50%),
-    url("../../img/mobile/benefit-bg.png") no-repeat 0 0;
-  background-size: 100%;
+  position: relative;
+  background-image: url("../../img/mobile/benefit-bg.png");
+  background-repeat: no-repeat;
+  background-color: rgb(98, 165, 59);
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+    background-position: 50% 60%;
+  }
 }
 
 .benefit__text {
+  position: relative;
   font-family: $arial;
   color: $white;
   margin: 0;
+  padding: {
+    top: 187px;
+    right: 60px;
+    bottom: 45px;
+    left: 60px;
+  }
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    width: 80px;
+    height: 80px;
+    background: url("../../img/mobile/benefit-gift-icon.svg") no-repeat 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 160px;
+    margin: {
+      right: 0;
+      left: auto;
+    }
+    padding: {
+      top: 70px;
+      bottom: 70px;
+    }
+    text-align: left;
+  }
 }

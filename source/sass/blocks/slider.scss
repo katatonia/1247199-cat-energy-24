@@ -1,6 +1,12 @@
 .slider {
   padding-bottom: 60px;
   background-color: #eaeaea;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+    background-color: $basic-grey;
+    padding-bottom: 0;
+  }
 }
 
 .slider__heading {

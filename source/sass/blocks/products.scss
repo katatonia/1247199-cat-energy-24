@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
+    padding-top: 80px;
   }
 }
 
@@ -39,12 +40,17 @@
       left: 60px;
     }
     margin-bottom: 0;
+    flex-grow: 1;
+
+    &:first-child {
+      margin-right: 80px;
+    }
   }
 }
 
 .products__heading {
   position: relative;
-  font-size: $font-size-24;
+  font-size: 24px;
   line-height: 37px;
   padding: {
     bottom: 30px;
@@ -188,9 +194,13 @@
 
 .products__link {
   position: relative;
-  font-size: $font-size-16;
+  font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::after {
     content: "";

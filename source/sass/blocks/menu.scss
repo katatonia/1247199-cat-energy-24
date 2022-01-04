@@ -37,13 +37,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $white;
     min-width: 480px;
   }
 }
 
 .menu__item {
-  position: relative;
   width: 100%;
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
@@ -58,17 +56,15 @@
     line-height: 24px;
     border: none;
     padding: 0;
-
-    &:first-child::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: -10px;
-      width: 64px;
-      height: 2px;
-      background-color: $basic-green;
-      transform: translateX(-50%);
-    }
   }
 }
 
+.menu__link {
+  @media (min-width: $desktop-width) {
+    color: $black;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+}

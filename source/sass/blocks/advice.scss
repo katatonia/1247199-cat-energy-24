@@ -1,5 +1,29 @@
 .advice {
   padding-top: 25px;
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    padding: {
+      top: 0;
+      right: 80px;
+    }
+  }
+}
+
+.advice__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    padding-right: 40px;
+  }
 }
 
 .advice__list {
@@ -7,29 +31,61 @@
   flex-direction: column;
 }
 
-.advice__title {
-  font-size: 24px;
-  line-height: 24px;
-  color: $black;
-  margin: 0;
-  padding-bottom: 35px;
-  border-bottom: 1px solid #cdcdcd;
-}
-
 .advice__item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $special-grey;
+
+  &:first-child {
+    border-top: 1px solid $special-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: {
+      top: 20px;
+      right: 30px;
+      bottom: 20px;
+      left: 30px;
+    }
+    border: {
+      top: 1px solid $special-grey;
+      right: 1px solid $special-grey;
+      bottom: none;
+      left: 1px solid $special-grey;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $special-grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border: {
+      right: none;
+      left: none;
+    }
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-
 .advice__heading {
-  font-size: $font-size-16;
-  color: #222222;
+  font-size: 16px;
+  color: $special-dark-grey;
   text-transform: uppercase;
   margin: {
     top: 13px;
     bottom: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -45,12 +101,18 @@
   &:nth-child(2) {
     text-transform: uppercase;
   }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      padding-left: 50px;
+    }
+  }
 }
 
 .advice__btn {
+  font-family: $OswaldRegular;
   color: $white;
-  font-family: $basic-font-family;
-  font-size: $font-size-16;
+  font-size: 16px;
   line-height: 20px;
   border: none;
   padding: {
@@ -65,4 +127,9 @@
   }
   text-transform: uppercase;
   background-color: $basic-green;
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
+    margin: 0;
+  }
 }
