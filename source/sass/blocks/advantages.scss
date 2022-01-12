@@ -11,7 +11,6 @@
   @media (min-width: $desktop-width) {
     padding: {
       top: 0;
-      bottom: 70px;
     }
   }
 }
@@ -38,6 +37,11 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    font: {
+      size: 60px;
+      weight: 400;
+    }
+    line-height: 60px;
     padding-bottom: 70px;
     color: $black;
   }
@@ -45,6 +49,7 @@
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
+    font-weight: 400;
   }
 }
 
@@ -70,6 +75,21 @@
       height: 60px;
       background: url("../../img/mobile/advantages-1.svg") no-repeat 0 0;
     }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tablet/advantages-bg-1.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        background: url("../../img/tablet/advantages-1.svg") no-repeat 0 0;
+      }
+    }
   }
 
   &--second {
@@ -80,6 +100,21 @@
       width: 60px;
       height: 60px;
       background: url("../../img/mobile/advantages-2.svg") no-repeat 0 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tablet/advantages-bg-2.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        background: url("../../img/tablet/advantages-2.svg") no-repeat 0 0;
+      }
     }
   }
 
@@ -92,6 +127,21 @@
       height: 60px;
       background: url("../../img/mobile/advantages-3.svg") no-repeat 0 0;
     }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tablet/advantages-bg-3.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        background: url("../../img/tablet/advantages-3.svg") no-repeat 0 0;
+      }
+    }
   }
 
   &--fourth {
@@ -103,55 +153,39 @@
       height: 60px;
       background: url("../../img/mobile/advantages-4.svg") no-repeat 0 0;
     }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/tablet/advantages-bg-4.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        background: url("../../img/tablet/advantages-4.svg") no-repeat 0 0;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
-    flex-basis: calc(50% - 110px);
+    font-size: 16px;
+    line-height: 24px;
+    flex-basis: calc(50% - 30px);
     padding: {
       top: 110px;
-      bottom: 0;
+      bottom: 160px;
       left: 0;
-    }
-    margin-bottom: 40px;
-
-    &--first::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      top: 0;
-      background: url("../../img/tablet/advantages-1.svg") no-repeat 0 0;
-    }
-
-    &--second::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      top: 0;
-      background: url("../../img/tablet/advantages-2.svg") no-repeat 0 0;
-    }
-
-    &--third::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      top: 0;
-      background: url("../../img/tablet/advantages-3.svg") no-repeat 0 0;
-    }
-
-    &--fourth::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      top: 0;
-      background: url("../../img/tablet/advantages-4.svg") no-repeat 0 0;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    padding: {
+      right: 50px;
+      bottom: 85px;
+    }
   }
 }

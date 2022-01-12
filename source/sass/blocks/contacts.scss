@@ -36,7 +36,10 @@
 .contacts__title {
   max-width: 140px;
   margin: 0;
-  font-size: 16px;
+  font: {
+    size: 16px;
+    weight: 400;
+  }
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;

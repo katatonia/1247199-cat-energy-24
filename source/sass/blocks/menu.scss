@@ -1,8 +1,5 @@
 .menu {
-  font: {
-    family: "OswaldMedium", "Arial", sans-serif;
-    size: 20px;
-  }
+  font-size: 20px;
   color: $black;
   background-color: $white;
   text-transform: uppercase;
@@ -46,8 +43,8 @@
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
   padding: {
-    top: 20px;
-    bottom: 20px;
+    top: 23px;
+    bottom: 24px;
   }
 
   @media (min-width: $tablet-width) {
@@ -55,16 +52,33 @@
     font-size: 18px;
     line-height: 24px;
     border: none;
-    padding: 0;
+    padding: {
+      top: 5px;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 29px;
   }
 }
 
 .menu__link {
-  @media (min-width: $desktop-width) {
-    color: $black;
+  @media (min-width: $tablet-width) {
+    padding: {
+      bottom: 6px;
+    }
 
     &--active {
       border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+    padding: {
+      bottom: 5px;
     }
   }
 }

@@ -10,13 +10,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 25px;
+    padding: {
+      top: 25px;
+      right: 20px;
+      left: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: {
-      right: 20px;
-      left: 20px;
+      top: 52px;
     }
 
     &--home {
@@ -44,9 +47,9 @@
   align-items: center;
   margin: 0;
   padding: {
-    top: 10px;
+    top: 3px;
     right: 20px;
-    bottom: 15px;
+    bottom: 6px;
     left: 20px;
   }
 
@@ -62,10 +65,11 @@
   }
 }
 
-.page-header__logo--img {
-  width: 40px;
+.page-header__logo {
+  width: 35px;
   height: 40px;
-  background: url("../../img/mobile/logo-img.png") no-repeat 0 0;
+  background-image: url("../../img/mobile/logo-img.png");
+  background-repeat: no-repeat;
   background-position: center;
 
   &:hover,
@@ -82,19 +86,21 @@
     padding: 0;
     width: 175px;
     height: 50px;
-    background: url("../../img/tablet/logo.svg") no-repeat 0 0;
+    background-image: url("../../img/tablet/logo.svg");
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 200px;
     height: 60px;
+    background-image: url("../../img/desktop/logo-desktop.svg");
   }
 }
 
 .page-header__logo--cat-energy {
-  width: 100px;
-  height: 20px;
-  background: url("../../img/mobile/logo-cat-energy.svg") no-repeat 0 0;
+  width: 105px;
+  height: 55px;
+  background-image: url("../../img/mobile/logo-cat-energy.svg");
+  background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: $tablet-width) {
@@ -105,13 +111,13 @@
 .page-header__toggle {
   border: none;
   cursor: pointer;
-  width: 30px;
+  width: 27px;
   height: 30px;
-  background: url("../../img/mobile/burger.svg") no-repeat 0 0;
+  background: url("../../img/mobile/close-icon.svg") no-repeat 0 0;
   background-position: center;
 
   &--closed {
-    background: url("../../img/mobile/close-icon.svg") no-repeat 0 0;
+    background: url("../../img/mobile/burger.svg") no-repeat 0 0;
     background-position: center;
   }
 
