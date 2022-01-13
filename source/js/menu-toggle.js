@@ -1,12 +1,12 @@
-let menuList = document.querySelector('.menu__list');
+let menu = document.querySelector('.menu');
 let menuToggle = document.querySelector('.page-header__toggle');
 
 menuToggle.addEventListener('click', function() {
   if (menuToggle.classList.contains('page-header__toggle--closed')) {
     menuToggle.classList.remove('page-header__toggle--closed');
-    menuList.classList.remove('menu__list--closed');
+    menu.classList.remove('menu--closed');
   } else {
     menuToggle.classList.add('page-header__toggle--closed');
-    menuList.classList.add('menu__list--closed');
+    menu.classList.add('menu--closed');
   }
 });

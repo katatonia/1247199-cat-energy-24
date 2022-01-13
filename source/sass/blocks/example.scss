@@ -44,7 +44,10 @@
 }
 
 .example__title {
-  font-size: 36px;
+  font: {
+    size: 36px;
+    weight: 400;
+  }
   line-height: 40px;
   color: $black;
   margin: 0;

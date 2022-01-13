@@ -67,10 +67,6 @@
 }
 
 .promo__container {
-  padding: {
-    left: 24px;
-  }
-
   @media (min-width: $desktop-width) {
     padding: {
       left: 84px;
@@ -80,14 +76,17 @@
 
 .promo__title {
   position: relative;
-  font-size: 36px;
+  font: {
+    size: 36px;
+    weight: 400;
+  }
   line-height: 36px;
   color: $white;
   text-align: center;
   margin: 0;
   padding: {
-    top: 25px;
-    bottom: 25px;
+    top: 27px;
+    bottom: 23px;
   }
 
   @media (min-width: $tablet-width) {
