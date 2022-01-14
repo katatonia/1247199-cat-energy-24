@@ -32,9 +32,13 @@
     flex-direction: row;
     justify-content: space-between;
     padding: {
-      top: 0;
+      top: 32px;
       bottom: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
   }
 }
 
@@ -78,7 +82,7 @@
   flex-shrink: 0;
   height: 30px;
   background: url("../../img/mobile/close-icon.svg") no-repeat 0 0;
-  background-position: center;
+  background-position: right;
 
   &--closed {
     background: url("../../img/mobile/burger.svg") no-repeat 0 0;

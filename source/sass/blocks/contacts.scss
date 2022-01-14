@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     background-color: $white;
   }
@@ -17,6 +19,9 @@
       top: 55px;
       bottom: 55px;
     }
+    top: 90px;
+    bottom: 90px;
+    left: 90px;
   }
 
   @media (min-width: $desktop-width) {
