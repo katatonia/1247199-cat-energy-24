@@ -1,7 +1,6 @@
 .example {
   padding: {
     top: 25px;
-    bottom: 40px;
   }
   background-color: #eaeaea;
 
@@ -17,11 +16,25 @@
 }
 
 .example__wrapper {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     background-color: $basic-grey;
     padding-bottom: 75px;
   }
+
+  // .container {
+  //   justify-content: space-around;
+  //   flex-basis: 100%;
+  // }
 }
 
 .example__container {
@@ -31,18 +44,21 @@
 }
 
 .example__title {
-  font-size: 36px;
+  font: {
+    size: 36px;
+    weight: 400;
+  }
   line-height: 40px;
   color: $black;
   margin: 0;
   padding: {
     bottom: 40px;
-    left: 20px;
   };
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    font-weight: 400;
     color: $black;
     padding: {
       top: 45px;
@@ -52,7 +68,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 75px;
+    padding: {
+      top: 30px;
+      bottom: 75px;
+    }
     border-color: $white;
   }
 }
@@ -96,8 +115,13 @@
 }
 
 .example__subtitle {
-  padding-bottom: 40px;
   margin: 0;
+  font: {
+    size: 14px;
+    weight: 400;
+  }
+  line-height: 20px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     max-width: 200px;
@@ -116,8 +140,9 @@
 }
 
 .example__items {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -126,18 +151,16 @@
 }
 
 .example__item {
+  position: relative;
   text-align: center;
   padding: {
     top: 15px;
     right: 20px;
+    bottom: 17px;
     left: 20px;
   }
-  border: {
-    top: 1px solid $special-grey;
-    right: 1px solid $special-grey;
-    left: 1px solid $special-grey;
-    radius: 3px;
-  }
+  border: 1px solid $special-grey;
+  border-radius: 3px;
 }
 
 .example__heading {
@@ -145,7 +168,12 @@
   line-height: 24px;
   color: $black;
   text-transform: uppercase;
-  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 20px;
+  }
 }
 
 .example__desc {
@@ -153,4 +181,23 @@
   margin: 0;
   font-size: 12px;
   line-height: 12px;
+
+  span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #eaeaea;
+    transform: translate(-50%, 50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+
+    span {
+      background-color: $white;
+    }
+  }
 }

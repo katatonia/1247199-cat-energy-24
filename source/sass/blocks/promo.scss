@@ -12,7 +12,7 @@
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 30px;
+    bottom: 60px;
     transform: translateX(-50%);
     width: 280px;
     min-height: 270px;
@@ -22,9 +22,9 @@
   @media (min-width: $tablet-width) {
     background: none;
     padding: {
-      top: 60px;
-      bottom: 530px;
-      left: 80px;
+      top: 65px;
+      bottom: 525px;
+      left: 95px;
     }
 
     &::after {
@@ -32,6 +32,8 @@
       position: absolute;
       width: 700px;
       min-height: 600px;
+      bottom: 9px;
+      left: 380px;
       background: url("../../img/tablet/promo.png") no-repeat 0 0;
       z-index: -1;
     }
@@ -40,7 +42,8 @@
   @media (min-width: $desktop-width) {
     padding: {
       top: 120px;
-      bottom: 280px;
+      bottom: 185px;
+      left: 33px;
     }
 
     background-image:
@@ -53,23 +56,37 @@
     &::after {
       content: "";
       position: absolute;
+      top: 140px;
+      left: 833px;
       width: 550px;
       min-height: 500px;
       background: url("../../img/desktop/promo.png") no-repeat 0 0;
+      z-index: 1;
+    }
+  }
+}
+
+.promo__container {
+  @media (min-width: $desktop-width) {
+    padding: {
+      left: 84px;
     }
   }
 }
 
 .promo__title {
   position: relative;
-  font-size: 36px;
+  font: {
+    size: 36px;
+    weight: 400;
+  }
   line-height: 36px;
   color: $white;
   text-align: center;
   margin: 0;
   padding: {
-    top: 25px;
-    bottom: 25px;
+    top: 27px;
+    bottom: 23px;
   }
 
   @media (min-width: $tablet-width) {
@@ -85,8 +102,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 50%;
-    padding-bottom: 40px;
+    padding: {
+      top: 104px;
+      bottom: 40px;
+    }
 
     &::after {
       width: 550px;
@@ -119,16 +138,17 @@
 .promo__btn {
   display: block;
   padding: {
-    top: 7px;
-    bottom: 7px;
+    top: 10px;
+    bottom: 10px;
   }
   color: $white;
   text-transform: uppercase;
   background-color: $basic-green;
   text-align: center;
 
-  &:hover {
-    background-color: #5eaa2f;
+  &:hover,
+  &:focus {
+    background-color: $special-green;
   }
 
   &:active {
@@ -137,9 +157,18 @@
 
   @media (min-width: $tablet-width) {
     width: 245px;
+    font-size: 20px;
+    line-height: 20px;
     padding: {
-      top: 14px;
-      bottom: 14px;
+      top: 17px;
+      bottom: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: {
+      top: 19px;
+      bottom: 15px;
     }
   }
 }

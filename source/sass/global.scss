@@ -8,6 +8,7 @@ body {
   color: $special-dark-grey;
   background-color: $white;
   min-width: 320px;
+  overflow-x: hidden;
 }
 
 img {
@@ -20,7 +21,8 @@ a {
   color: inherit;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }

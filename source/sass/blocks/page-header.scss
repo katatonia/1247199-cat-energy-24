@@ -1,24 +1,5 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  padding: {
-    right: 0;
-    left: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 25px;
-  }
-
   @media (min-width: $desktop-width) {
-    padding: {
-      right: 20px;
-      left: 20px;
-    }
-
     &--home {
       position: absolute;
       width: 100%;
@@ -42,33 +23,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
   padding: {
-    top: 10px;
-    right: 20px;
-    bottom: 15px;
-    left: 20px;
+    top: 11px;
+    bottom: 13px;
   }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     padding: {
-      top: 0;
-      right: 0;
+      top: 32px;
       bottom: 0;
-      left: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 62px;
   }
 }
 
-.page-header__logo--img {
-  width: 40px;
-  height: 40px;
-  background: url("../../img/mobile/logo-img.png") no-repeat 0 0;
-  background-position: center;
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 
@@ -77,41 +57,36 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-    width: 175px;
-    height: 50px;
-    background: url("../../img/tablet/logo.svg") no-repeat 0 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 }
 
-.page-header__logo--cat-energy {
-  width: 100px;
-  height: 20px;
-  background: url("../../img/mobile/logo-cat-energy.svg") no-repeat 0 0;
-  background-position: center;
+.page-header__logo-img {
+  flex-basis: 40px;
+  flex-shrink: 0;
+}
+
+.page-header__logo-text {
+  margin: auto;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    margin-left: initial; //отступ от картинки
   }
 }
 
 .page-header__toggle {
   border: none;
   cursor: pointer;
-  width: 30px;
+  flex-basis: 40px;
+  flex-shrink: 0;
   height: 30px;
-  background: url("../../img/mobile/burger.svg") no-repeat 0 0;
-  background-position: center;
+  background: url("../../img/mobile/close-icon.svg") no-repeat 0 0;
+  background-position: right;
 
   &--closed {
-    background: url("../../img/mobile/close-icon.svg") no-repeat 0 0;
-    background-position: center;
+    background: url("../../img/mobile/burger.svg") no-repeat 0 0;
+    background-position: right;
   }
 
   @media (min-width: $tablet-width) {

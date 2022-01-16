@@ -196,6 +196,15 @@
   margin-top: auto;
   border: none;
 
+  &:hover,
+  &:focus {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--grey {
     font-size: 16px;
     line-height: 20px;
@@ -209,12 +218,13 @@
     }
     border: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #ebebeb;
     }
 
     &:active {
-      opacity: 0.3;
+      color: rgba(68, 68, 68, 0.3);
     }
   }
 

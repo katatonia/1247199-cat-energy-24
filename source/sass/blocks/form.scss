@@ -152,11 +152,15 @@
   }
 
   &:hover {
-    border: 2px solid $special-grey;
+    border-color: $special-grey;
   }
 
   &:focus {
-    border-color: #444444;
+    border-color: $special-dark-grey;
+  }
+
+  &:disabled {
+    border-color: #ff8282;
   }
 
   @media (min-width: $tablet-width) {
@@ -218,6 +222,10 @@
   color: $special-dark-grey;
   text-transform: uppercase;
   padding-left: 45px;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -391,6 +399,15 @@
   }
   margin-bottom: 20px;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;

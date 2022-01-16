@@ -29,3 +29,14 @@
     margin-bottom: 0;
   }
 }
+
+.page-footer__logo-img {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
