@@ -74,7 +74,8 @@
       height: 30px;
       background: url("../../img/mobile/catalog-plus-icon.svg") no-repeat 0 0;
       top: 25px;
-      left: 125px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -104,6 +105,12 @@
         height: 60px;
         background-size: contain;
       }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--more {
+      padding-top: 150px;
     }
   }
 }

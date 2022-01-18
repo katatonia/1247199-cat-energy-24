@@ -161,6 +161,7 @@
   }
   border: 1px solid $special-grey;
   border-radius: 3px;
+  margin: 0;
 }
 
 .example__heading {
@@ -172,7 +173,6 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding-bottom: 20px;
   }
 }
 
@@ -186,10 +186,13 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: {
+      right: 10px;
+      left: 10px;
+    }
     background-color: #eaeaea;
     transform: translate(-50%, 50%);
+    white-space: nowrap;
   }
 
   @media (min-width: $tablet-width) {
@@ -198,6 +201,16 @@
 
     span {
       background-color: $white;
+      padding: {
+        right: 15px;
+        left: 15px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    span {
+      background-color: #f2f2f2;
     }
   }
 }

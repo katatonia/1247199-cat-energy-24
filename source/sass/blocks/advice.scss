@@ -91,11 +91,22 @@
       bottom: 9px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: {
+      top: 0;
+      bottom: 0;
+    }
+  }
 }
 
 .advice__specs {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 300px;
+  }
 }
 
 .advice__specs-item {

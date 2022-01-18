@@ -36,7 +36,10 @@
 }
 
 .form__title {
-  font-size: 36px;
+  font: {
+    size: 36px;
+    weight: 400;
+  }
   line-height: 36px;
   color: $black;
   padding-bottom: 35px;
@@ -58,7 +61,7 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     max-width: 100%;
@@ -101,10 +104,7 @@
 .form__text {
   max-width: 230px;
   color: $black;
-  padding: {
-    bottom: 40px;
-    left: 20px;
-  }
+  padding-bottom: 40px;
   margin: 0;
   text-transform: uppercase;
 
@@ -121,8 +121,8 @@
   font-size: 16px;
   text-transform: uppercase;
   margin: {
-    top: 0;
-    right: 10px;
+    top: 7px;
+    right: 15px;
     bottom: 0;
     left: 0;
   }
@@ -141,9 +141,9 @@
   margin: 0;
   border: 1px solid #e7e7e7;
   padding: {
-    top: 10px;
+    top: 8px;
     bottom: 10px;
-    left: 8px;
+    left: 14px;
   };
 
   &::placeholder {
@@ -172,7 +172,7 @@
 .form__data-list {
   display: flex;
   flex-direction: column;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 70px;
@@ -192,8 +192,8 @@
 
 .form__radio-list {
   padding: {
-    top: 20px;
-    bottom: 20px;
+    top: 30px;
+    bottom: 50px;
   }
 
   @media (min-width: $tablet-width) {
@@ -209,7 +209,7 @@
 }
 
 .form__radio-list-item {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   &:last-child {
     margin-bottom: 0;
@@ -260,6 +260,7 @@
 .form__contact-list {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     padding: {
@@ -288,7 +289,7 @@
   width: 100%;
   border: 1px solid #e7e7e7;
   min-height: 150px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   &::placeholder {
     font-size: 16px;
@@ -386,7 +387,10 @@
 }
 
 .form__submit-btn {
-  font-family: $OswaldRegular;
+  font: {
+    family:  $OswaldRegular;
+    size: 16px;
+  }
   background-color: $basic-green;
   color: $white;
   line-height: 20px;
@@ -423,7 +427,10 @@
 }
 
 .form__required-field {
-  font-family: $arial;
+  font: {
+    size: 14px;
+    family: $arial;
+  }
   line-height: 16px;
   align-self: center;
   color: $black;
