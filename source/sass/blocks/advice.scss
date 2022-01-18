@@ -1,12 +1,7 @@
 .advice {
-  padding-top: 25px;
-
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    padding: {
-      top: 0;
-      right: 80px;
-    }
+    margin-right: 80px;
   }
 }
 
@@ -44,8 +39,8 @@
     padding: {
       top: 20px;
       right: 30px;
-      bottom: 20px;
-      left: 30px;
+      bottom: 9px;
+      left: 37px;
     }
     border: {
       top: 1px solid $special-grey;
@@ -64,34 +59,54 @@
       right: none;
       left: none;
     }
-
+    padding: {
+      top: 15px;
+      right: 0;
+      bottom: 15px;
+      left: 0;
+    }
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
 .advice__heading {
-  font-size: 16px;
+  font: {
+    size: 16px;
+    weight: 400;
+  }
   color: $special-dark-grey;
   text-transform: uppercase;
-  margin: {
-    top: 13px;
+  margin: 0;
+  padding: {
+    top: 10px;
     bottom: 13px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding: {
+      top: 6px;
+      bottom: 9px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    padding: {
+      top: 0;
+      bottom: 0;
+    }
   }
 }
 
 .advice__specs {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 300px;
+  }
 }
 
 .advice__specs-item {
@@ -123,7 +138,7 @@
   }
   margin: {
     top: 15px;
-    bottom: 15px;
+    bottom: 18px;
   }
   text-transform: uppercase;
   background-color: $basic-green;
