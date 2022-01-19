@@ -22,7 +22,7 @@
 
   @media (min-width: $desktop-width) {
     padding: {
-      top: 85px;
+      top: 71px;
       bottom: 165px;
     }
   }
@@ -109,6 +109,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-rows: 206px 1fr 40px;
+
     &--more {
       padding-top: 150px;
     }
@@ -117,6 +119,32 @@
 
 .catalog__photo {
   grid-area: photo;
+}
+
+.catalog__img {
+  &--1000 {
+    width: 84px;
+    height: 100px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--500 {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--1000 {
+      width: 168px;
+      height: 206px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--1000 {
+      width: 172px;
+      height: 201px;
+    }
+  }
 }
 
 .catalog__heading {
@@ -146,6 +174,10 @@
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
+    padding: {
+      right: 5px;
+      left: 5px;
+    }
   }
 }
 
