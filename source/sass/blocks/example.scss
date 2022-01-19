@@ -8,6 +8,10 @@
     padding: 0;
     background-color: $white;
     border-top: 1px solid #e6e6e6;
+
+    &--br {
+      display: inline-block;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +88,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 55px;
+    padding: {
+      right: 10px;
+      bottom: 55px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -111,6 +118,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding-bottom: 0;
+    flex-direction: column-reverse;
   }
 }
 
@@ -162,6 +170,14 @@
   border: 1px solid $special-grey;
   border-radius: 3px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
 }
 
 .example__heading {
@@ -202,8 +218,8 @@
     span {
       background-color: $white;
       padding: {
-        right: 15px;
-        left: 15px;
+        right: 10px;
+        left: 10px;
       }
     }
   }
@@ -214,3 +230,4 @@
     }
   }
 }
+

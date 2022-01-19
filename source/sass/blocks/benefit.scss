@@ -25,9 +25,29 @@
   background-color: rgb(98, 165, 59);
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/mobile/benefit-bg@2x.png");
+    background-size: contain;
+  }
+
   @media (min-width: $tablet-width) {
+    background-image: url("../../img/tablet/benefit-bg.png");
     background-size: cover;
     background-position: 50% 60%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/tablet/benefit-bg@2x.png");
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/desktop/benefit-bg.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/desktop/benefit-bg@2x.png");
+      background-size: contain;
+    }
   }
 }
 
