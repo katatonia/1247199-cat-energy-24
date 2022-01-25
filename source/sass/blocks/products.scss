@@ -207,6 +207,8 @@
 
 .products__link {
   position: relative;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -215,22 +217,40 @@
     opacity: 0.3;
   }
 
+  &::before,
   &::after {
+    display: block;
     content: "";
-    position: absolute;
-    top: 8px;
-    left: 100px;
-    width: 30px;
-    height: 10px;
-    background: url("../../img/mobile/products-arrow.svg") no-repeat 0 0;
+    transition: all 0.2s ease-out;
+  }
+
+  &::before {
+    width: 19px;
+    height: 3px;
+    order: 1;
+    margin-left: 10px;
+    background-color: $black;
+  }
+
+  &::after {
+    order: 2;
+    margin-top: 1px;
+    border: 5px solid transparent;
+    border-left-color: $black;
+  }
+
+  &:hover::before {
+    width: 27px;
   }
 
   @media (min-width: $tablet-width) {
+    display: inline-flex;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 20px;
+    padding-left: 2px;
 
-    &::after {
-      left: 132px;
+    &::before {
+      margin-left: 20px;
     }
   }
 }

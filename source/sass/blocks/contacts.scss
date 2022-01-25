@@ -1,9 +1,6 @@
 .contacts {
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    background-color: $white;
-  }
+  background-color: #f2f2f2;
 }
 
 .contacts__container {
@@ -26,15 +23,13 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    min-width: 565px;
-    left: 110px;
-    z-index: 1;
+    max-width: 570px;
+    margin-bottom: 10px;
     padding: {
-      top: 67px;
-      right: 74px;
-      bottom: 50px;
-      left: 80px;
+      left: 75px;
+      right: 85px;
     }
+    z-index: 1;
     background-color: $white;
   }
 }

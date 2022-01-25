@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32x32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -27,10 +31,10 @@
       <nav class="menu menu--closed">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="index.html"> Главная</a>
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#"> Каталог продукции</a>
+            <a class="menu__link menu__link--active" href="#">Каталог продукции</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="form.html">Подбор программы</a>
@@ -49,17 +53,19 @@
 
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a href="#" class="catalog__photo">
-              <picture>
-                <source media="(min-width: 1200px)"
-                srcset="img/desktop/catalog/catalog-chicken-500.png 1x,
-                        img/desktop/catalog/2x/catalog-chicken-500@2x.png 2x">
-                <source media="(min-width: 768px)"
-                srcset="img/tablet/catalog/catalog-chicken-500.png 1x,
-                        img/tablet/catalog/2x/catalog-chicken-500@2x.png 2x">
-                <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-chicken-500.png" srcset="img/mobile/catalog/2x/catalog-chicken-500@2x.png 2x" alt="Фото товара" width="68" height="86">
-              </picture>
-            </a>
+            <div class="catalog__photo-container">
+              <a href="#" class="catalog__photo">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="img/desktop/catalog/catalog-chicken-500.png 1x,
+                          img/desktop/catalog/2x/catalog-chicken-500@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/tablet/catalog/catalog-chicken-500.png 1x,
+                          img/tablet/catalog/2x/catalog-chicken-500@2x.png 2x">
+                  <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-chicken-500.png" srcset="img/mobile/catalog/2x/catalog-chicken-500@2x.png 2x" alt="Фото товара" width="69" height="86">
+                </picture>
+              </a>
+            </div>
             <div class="catalog__wrapper">
               <a href="#">
                 <h2 class="catalog__heading">Cat energy pro 500 г</h2>
@@ -79,21 +85,23 @@
                 </li>
               </ul>
             </div>
-            <button class="catalog__btn">Заказать</button>
+            <button class="catalog__btn" type="button">Заказать</button>
           </li>
 
           <li class="catalog__item">
-            <a href="#">
-              <picture>
-                <source media="(min-width: 1200px)"
-                srcset="img/desktop/catalog/catalog-chicken-1000.png 1x,
-                        img/desktop/catalog/2x/catalog-chicken-1000@2x.png 2x">
-                <source media="(min-width: 768px)"
-                srcset="img/tablet/catalog/catalog-chicken-1000.png 1x,
-                        img/tablet/catalog/2x/catalog-chicken-1000@2x.png 2x">
-                <img class="catalog__img catalog__img--1000" src="img/mobile/catalog/catalog-chicken-1000.png" srcset="img/mobile/catalog/2x/catalog-chicken-1000@2x.png 2x" alt="Фото товара" width="68" height="86">
-              </picture>
-            </a>
+            <div class="catalog__photo-container">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="img/desktop/catalog/catalog-chicken-1000.png 1x,
+                          img/desktop/catalog/2x/catalog-chicken-1000@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/tablet/catalog/catalog-chicken-1000.png 1x,
+                          img/tablet/catalog/2x/catalog-chicken-1000@2x.png 2x">
+                  <img class="catalog__img catalog__img--1000" src="img/mobile/catalog/catalog-chicken-1000.png" srcset="img/mobile/catalog/2x/catalog-chicken-1000@2x.png 2x" alt="Фото товара" width="84" height="100">
+                </picture>
+              </a>
+            </div>
             <div class="catalog__wrapper">
               <a href="#">
                 <h2 class="catalog__heading">Cat energy pro 1000 г</h2>
@@ -113,21 +121,23 @@
                 </li>
               </ul>
             </div>
-            <button class="catalog__btn">Заказать</button>
+            <button class="catalog__btn" type="button">Заказать</button>
           </li>
 
           <li class="catalog__item">
-            <a href="#">
-              <picture>
+            <div class="catalog__photo-container">
+              <a href="#">
+                <picture>
                 <source media="(min-width: 1200px)"
                 srcset="img/desktop/catalog/catalog-fish-500.png 1x,
                         img/desktop/catalog/2x/catalog-fish-500@2x.png 2x">
                 <source media="(min-width: 768px)"
                 srcset="img/tablet/catalog/catalog-fish-500.png 1x,
                         img/tablet/catalog/2x/catalog-fish-500@2x.png 2x">
-                <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-fish-500.png" srcset="img/mobile/catalog/2x/catalog-fish-500@2x.png 2x" alt="Фото товара" width="68" height="86">
-              </picture>
+                <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-fish-500.png" srcset="img/mobile/catalog/2x/catalog-fish-500@2x.png 2x" alt="Фото товара" width="69" height="86">
+                </picture>
             </a>
+            </div>
             <div class="catalog__wrapper">
               <a href="#">
                 <h2 class="catalog__heading">Cat energy pro 500 г</h2>
@@ -147,21 +157,23 @@
                 </li>
               </ul>
             </div>
-            <button class="catalog__btn">Заказать</button>
+            <button class="catalog__btn" type="button">Заказать</button>
           </li>
 
           <li class="catalog__item">
-            <a href="#">
-              <picture>
-                <source media="(min-width: 1200px)"
-                srcset="img/desktop/catalog/catalog-fish-1000.png 1x,
-                        img/desktop/catalog/2x/catalog-fish-1000@2x.png 2x">
-                <source media="(min-width: 768px)"
-                srcset="img/tablet/catalog/catalog-fish-1000.png 1x,
-                        img/tablet/catalog/2x/catalog-fish-1000@2x.png 2x">
-                <img class="catalog__img catalog__img--1000" src="img/mobile/catalog/catalog-fish-1000.png" srcset="img/mobile/catalog/2x/catalog-fish-1000@2x.png 2x" alt="Фото товара" width="68" height="86">
-              </picture>
-            </a>
+            <div class="catalog__photo-container">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="img/desktop/catalog/catalog-fish-1000.png 1x,
+                          img/desktop/catalog/2x/catalog-fish-1000@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/tablet/catalog/catalog-fish-1000.png 1x,
+                          img/tablet/catalog/2x/catalog-fish-1000@2x.png 2x">
+                  <img class="catalog__img catalog__img--1000" src="img/mobile/catalog/catalog-fish-1000.png" srcset="img/mobile/catalog/2x/catalog-fish-1000@2x.png 2x" alt="Фото товара" width="84" height="100">
+                </picture>
+              </a>
+            </div>
             <div class="catalog__wrapper">
               <a href="#">
                 <h2 class="catalog__heading">Cat energy pro 1000 г</h2>
@@ -181,11 +193,11 @@
                 </li>
               </ul>
             </div>
-            <button class="catalog__btn">Заказать</button>
+            <button class="catalog__btn" type="button">Заказать</button>
           </li>
 
           <li class="catalog__item">
-            <a href="#">
+            <div class="catalog__photo-container">
               <picture>
                 <source media="(min-width: 1200px)"
                 srcset="img/desktop/catalog/catalog-buckwheat-500.png 1x,
@@ -193,9 +205,11 @@
                 <source media="(min-width: 768px)"
                 srcset="img/tablet/catalog/catalog-buckwheat-500.png 1x,
                         img/tablet/catalog/2x/catalog-buckwheat-500@2x.png 2x">
-                <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-buckwheat-500.png" srcset="img/mobile/catalog/2x/catalog-buckwheat-500@2x.png 2x" alt="Фото товара" width="68" height="86">
+                <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-buckwheat-500.png" srcset="img/mobile/catalog/2x/catalog-buckwheat-500@2x.png 2x" alt="Фото товара" width="69" height="86">
               </picture>
             </a>
+            </div>
+            <a href="#">
             <div class="catalog__wrapper">
               <a href="#">
                 <h2 class="catalog__heading">Cat energy slim 500 г</h2>
@@ -215,21 +229,23 @@
                 </li>
               </ul>
             </div>
-            <button class="catalog__btn">Заказать</button>
+            <button class="catalog__btn" type="button">Заказать</button>
           </li>
 
           <li class="catalog__item">
-            <a href="#">
-              <picture>
-                <source media="(min-width: 1200px)"
-                srcset="img/desktop/catalog/catalog-buckwheat-1000.png 1x,
-                        img/desktop/catalog/2x/catalog-buckwheat-1000@2x.png 2x">
-                <source media="(min-width: 768px)"
-                srcset="img/tablet/catalog/catalog-buckwheat-1000.png 1x,
-                        img/tablet/catalog/2x/catalog-buckwheat-1000@2x.png 2x">
-                <img class="catalog__img catalog__img--1000" src="img/mobile/catalog/catalog-buckwheat-1000.png" srcset="img/mobile/catalog/2x/catalog-buckwheat-1000@2x.png 2x" alt="Фото товара" width="68" height="86">
-              </picture>
-            </a>
+            <div class="catalog__photo-container">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="img/desktop/catalog/catalog-buckwheat-1000.png 1x,
+                          img/desktop/catalog/2x/catalog-buckwheat-1000@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/tablet/catalog/catalog-buckwheat-1000.png 1x,
+                          img/tablet/catalog/2x/catalog-buckwheat-1000@2x.png 2x">
+                  <img class="catalog__img catalog__img--1000" src="img/mobile/catalog/catalog-buckwheat-1000.png" srcset="img/mobile/catalog/2x/catalog-buckwheat-1000@2x.png 2x" alt="Фото товара" width="84" height="100">
+                </picture>
+              </a>
+            </div>
             <div class="catalog__wrapper">
               <a href="#">
                 <h2 class="catalog__heading">Cat energy pro 1000 г</h2>
@@ -249,21 +265,23 @@
                 </li>
               </ul>
             </div>
-            <button class="catalog__btn">Заказать</button>
+            <button class="catalog__btn" type="button">Заказать</button>
           </li>
 
           <li class="catalog__item">
-            <a href="#">
-              <picture>
-                <source media="(min-width: 1200px)"
-                srcset="img/desktop/catalog/catalog-rice-500.png 1x,
-                        img/desktop/catalog/2x/catalog-rice-500@2x.png 2x">
-                <source media="(min-width: 768px)"
-                srcset="img/tablet/catalog/catalog-rice-500.png 1x,
-                        img/tablet/catalog/2x/catalog-rice-500@2x.png 2x">
-                <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-rice-500.png" srcset="img/mobile/catalog/2x/catalog-rice-500@2x.png 2x" alt="Фото товара" width="68" height="86">
-              </picture>
-            </a>
+            <div class="catalog__photo-container">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                  srcset="img/desktop/catalog/catalog-rice-500.png 1x,
+                          img/desktop/catalog/2x/catalog-rice-500@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/tablet/catalog/catalog-rice-500.png 1x,
+                          img/tablet/catalog/2x/catalog-rice-500@2x.png 2x">
+                  <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-rice-500.png" srcset="img/mobile/catalog/2x/catalog-rice-500@2x.png 2x" alt="Фото товара" width="69" height="86">
+                </picture>
+              </a>
+            </div>
             <div class="catalog__wrapper">
               <a href="#">
                 <h2 class="catalog__heading">Cat energy slim 500 г</h2>
@@ -283,7 +301,7 @@
                 </li>
               </ul>
             </div>
-            <button class="catalog__btn">Заказать</button>
+            <button class="catalog__btn" type="button">Заказать</button>
           </li>
 
           <li class="catalog__item catalog__item--more">
@@ -298,7 +316,7 @@
     </section>
 
 <div class="extra container">
-  <h2 class="extra__title"><span class="extra__line">Дополнительные товары</span></h2>
+  <h2 class="extra__title"><span>Дополнительные товары</span></h2>
 
   <div class="extra__wrapper">
     <section class="advice">
@@ -311,7 +329,7 @@
               <span class="advice__specs-item">200 р.</span>
             </div>
             </div>
-            <button class="advice__btn">Заказать</button>
+            <button class="advice__btn" type="button">Заказать</button>
           </li>
           <li class="advice__item">
             <div class="advice__wrapper">
@@ -321,7 +339,7 @@
               <span class="advice__specs-item">50 р.</span>
             </div>
             </div>
-            <button class="advice__btn">Заказать</button>
+            <button class="advice__btn" type="button">Заказать</button>
           </li>
           <li class="advice__item">
             <div class="advice__wrapper">
@@ -331,7 +349,7 @@
               <span class="advice__specs-item">100 р.</span>
             </div>
             </div>
-            <button class="advice__btn">Заказать</button>
+            <button class="advice__btn" type="button">Заказать</button>
           </li>
           <li class="advice__item">
             <div class="advice__wrapper">
@@ -341,7 +359,7 @@
               <span class="advice__specs-item">300 р.</span>
             </div>
           </div>
-            <button class="advice__btn">Заказать</button>
+            <button class="advice__btn" type="button">Заказать</button>
           </li>
         </ul>
     </section>

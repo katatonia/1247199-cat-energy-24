@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32x32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -30,7 +34,7 @@
             <a class="menu__link menu__link--active" href="#"> Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="catalog.html"> Каталог продукции</a>
+            <a class="menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="form.html">Подбор программы</a>
@@ -103,55 +107,55 @@
     </section>
 
     <section class="example">
-      <div class="container">
-        <h2 class="example__title">Живой пример</h2>
-      </div>
-      <div class="example__wrapper">
-        <div class="container">
-          <div class="example__container">
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__list">
-              <h2 class="example__subtitle">Затраты на питание: <span class="example--br"> 15 000 руб.</span></h2>
-              <div class="example__items">
-                <dl class="example__item">
-                  <dt class="example__heading">5 кг</dt>
-                  <dd class="example__desc"><span>снижение веса</span></dd>
-                </dl>
-                <dl class="example__item">
-                  <dt class="example__heading">60 дней</dt>
-                  <dd class="example__desc"><span>затрачено времени</span></dd>
-                </dl>
+      <div class="example__wrapper container">
+        <div class="example__wrap">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
+            без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+
+          <div class="example__inner">
+            <div class="example__features">
+
+              <div class="features__item">
+                <span class="features__title">Снижение<br> веса</span>
+                <span class="features__desc">5 кг</span>
               </div>
+
+              <div class="features__item">
+                <span class="features__title">Затрачено<br> времени</span>
+                <span class="features__desc">60 дней</span>
+              </div>
+
             </div>
+
+            <p class="example__subtitle">
+              Затраты на питание:
+              <span class="example__subtitle--br">15 000 руб.</span>
+            </p>
           </div>
-
-      <div class="slider">
-        <ul class="slider__list">
-          <li class="slider__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/desktop/slider-cat-before.png 1x, img/desktop/slider-cat-before@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/tablet/slider-cat-before.png 1x, img/tablet/slider-cat-before@2x.png 2x">
-              <img  class="slider__img" src="img/mobile/slider-cat-before.png" srcset="img/mobile/slider-cat-before@2x.png 2x" alt="Фото кота «до»">
-            </picture>
-          </li>
-          <li class="slider__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/desktop/slider-cat-after.png 1x, img/desktop/slider-cat-after@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/tablet/slider-cat-after.png 1x, img/tablet/slider-cat-after@2x.png 2x">
-              <img  class="slider__img" src="img/mobile/slider-cat-after.png" srcset="img/mobile/slider-cat-after@2x.png 2x" alt="Фото кота «после»">
-            </picture>
-          </li>
-        </ul>
-        <div class="slider__range">
-          <span class="slider__text">Было</span>
-          <div class="slider__scale"></div>
-          <!-- <input type="range"> -->
-          <span class="slider__text">Стало</span>
         </div>
-      </div>
-    </div>
 
-    </div>
+        <div class="slider">
+          <ul class="slider__list">
+            <li class="slider__item slider__item--before">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/desktop/slider-cat.png 1x, img/desktop/slider-cat@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet/slider-cat.png 1x, img/tablet/slider-cat@2x.png 2x">
+                <img src="img/mobile/slider-cat.png" srcset="img/mobile/slider-cat@2x.png 2x" alt="Фото кота «до»" width="280" height="232">
+              </picture>
+            </li>
+          </ul>
+          <div class="slider__range">
+            <span class="slider__text">Было</span>
+            <div class="slider__scale"></div>
+            <div class="slider__toggle"></div>
+            <span class="slider__text">Стало</span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <section class="contacts">

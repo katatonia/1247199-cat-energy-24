@@ -1,4 +1,9 @@
 .advice {
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     margin-right: 80px;
@@ -125,6 +130,7 @@
 }
 
 .advice__btn {
+  display: block;
   font-family: $OswaldRegular;
   color: $white;
   font-size: 16px;
@@ -142,6 +148,7 @@
   }
   text-transform: uppercase;
   background-color: $basic-green;
+  cursor: pointer;
 
   &:hover,
   &:focus {

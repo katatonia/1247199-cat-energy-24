@@ -1,4 +1,10 @@
 .page-header {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
   @media (min-width: $desktop-width) {
     &--home {
       position: absolute;

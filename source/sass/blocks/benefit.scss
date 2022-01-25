@@ -1,105 +1,91 @@
 .benefit {
-  margin: {
-    top: 35px;
-    bottom: 35px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: {
-      top: 75px;
-      bottom: 75px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    width: 245px;
-    margin: 0;
-  }
-}
-
-.benefit__container {
-  position: relative;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("../../img/mobile/benefit-bg.png");
   background-repeat: no-repeat;
-  background-color: rgb(98, 165, 59);
   background-position: center;
+  background-size: contain;
+  max-width: 634px;
+  margin: {
+    top: 20px;
+    right: auto;
+    bottom: 20px;
+    left: auto;
+  }
+  padding: {
+    top: 40px;
+    bottom: 40px;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/mobile/benefit-bg@2x.png");
-    background-size: contain;
   }
 
   @media (min-width: $tablet-width) {
+    width: 707px;
+    flex-direction: row;
+    justify-content: space-between;
     background-image: url("../../img/tablet/benefit-bg.png");
-    background-size: cover;
-    background-position: 50% 60%;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/tablet/benefit-bg@2x.png");
-      background-size: contain;
     }
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: flex-start;
     background-image: url("../../img/desktop/benefit-bg.png");
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/desktop/benefit-bg@2x.png");
-      background-size: contain;
     }
+  }
+
+  &::before {
+    content: "";
+    margin: 50px 0 50px;
+    display: block;
+    width: 240px;
+    height: 68px;
+    background: url("../../img/mobile/benefit-gift-icon.svg") no-repeat center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .benefit__text {
-  position: relative;
-  font: {
-    size: 16px;
-    family: $arial;
-  }
-  line-height: 20px;
-  color: $white;
+  flex-grow: 1;
   margin: 0;
   padding: {
-    top: 187px;
     right: 60px;
-    bottom: 45px;
     left: 60px;
   }
   text-align: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 58px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
-    background: url("../../img/mobile/benefit-gift-icon.svg") no-repeat 0 0;
-  }
+  font-family: $arial;
+  line-height: 18px;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    max-width: 160px;
-    margin: {
-      right: 65px;
-      left: auto;
-    }
+    flex-grow: 0;
+    width: 160px;
     padding: {
-      top: 70px;
-      bottom: 70px;
+      right: 100px;
+      left: 0;
     }
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0;
     text-align: center;
-    padding: {
-      left: 40px;
-      right: 40px;
-      bottom: 0;
-      top: 185px;
-    }
+    padding: 0;
   }
 }

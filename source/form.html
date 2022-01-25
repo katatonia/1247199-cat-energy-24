@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32x32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -27,13 +31,13 @@
       <nav class="menu menu--closed">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#">Главная</a>
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="form.html">Подбор программы</a>
+            <a class="menu__link  menu__link--active" href="#">Подбор программы</a>
           </li>
         </ul>
     </nav>
@@ -86,30 +90,28 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__heading"><span class="form__line">Контактные данные (владельца кота)</span></legend>
+            <h2 class="form__heading"><span>Контактные данные<br>(владельца кота)</span></h2>
             <ul class="form__contact-list">
               <li class="form__contact-list-item">
                 <label class="form__label-text" for="email-field">E-mail:<sup>*</sup></label>
                 <input class="form__input-text" type="email" name="email" id="email-field"
                   placeholder="kuklachev@gmail.com" required>
-                <img src="./img/mobile/email-icon.svg" alt="Иконка конверта" width="20" height="20">
               </li>
               <li class="form__contact-list-item">
                 <label class="form__label-text" for="tel-field">Телефон:<sup>*</sup></label>
                 <input class="form__input-text" type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90"
                   required>
-                  <img src="./img/mobile/phone-icon.svg" alt="Иконка телефонной трубки" width="20" height="20">
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__heading"><span class="form__line">Комментарий</span></legend>
+            <h2 class="form__heading"><span>Комментарий</span></h2>
             <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__heading"><span class="form__line">Дополнительно</span></legend>
+            <h2 class="form__heading"><span>Дополнительно</span></h2>
             <ul class="form__extra-list">
               <li class="form__extra-list-item">
                 <input class="form__input-check" type="checkbox" name="sweetener" id="sweetener-check" checked>
@@ -142,7 +144,7 @@
 
     <section class="contacts">
       <div class="contacts__container container">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__text--br">Санкт-Петербург</span></p>
       </div>
       <iframe class="contacts__map"
