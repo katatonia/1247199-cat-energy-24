@@ -56,48 +56,46 @@
 }
 
 .form__heading {
-  max-width: 185px;
   position: relative;
-  font-size: 24px;
+  font: {
+    size: 24px;
+    weight: 400;
+  }
   line-height: 26px;
   color: $black;
   padding-bottom: 37px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-green;
+  }
+
+  span {
+    position: relative;
+    display: inline-block;
+    padding: {
+      right: 20px;
+      left: 20px;
+    }
+    margin-top: 20px;
+    background-color: $white;
+  }
 
   @media (min-width: $tablet-width) {
-    max-width: 100%;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     padding-left: 40px;
-  }
-}
-
-.form__line {
-  display: inline-block;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    border-top: 2px solid $basic-green;
-    margin: {
-      top: 20px;
-      left: -100%;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    border-top: 2px solid $basic-green;
-    margin: {
-      top: 20px;
-      left: 20px;
-    }
   }
 }
 
@@ -191,13 +189,37 @@
 }
 
 .form__radio-list {
+  position: relative;
   padding: {
     top: 30px;
     bottom: 50px;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $special-grey;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: $special-grey;
+  }
+
   @media (min-width: $tablet-width) {
-    max-width: 630px;
     padding: {
       top: 30px;
       bottom: 30px;
@@ -205,6 +227,11 @@
     }
     margin-bottom: 75px;
     border: 1px solid $special-grey;
+
+    &::after,
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -223,10 +250,6 @@
   text-transform: uppercase;
   padding-left: 45px;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -235,26 +258,33 @@
 
 .form__input-radio {
   display: none;
+  position: relative;
 
   & + .form__label-radio::before {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
+    display: block;
+    width: 15px;
+    height: 15px;
     left: 0;
-    bottom: 0;
-    background: url("../../img/mobile/radio-btn.svg") no-repeat 0 0;
+    top: 0;
+    padding: 8px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
   }
 
   &:checked + .form__label-radio::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 0;
-    bottom: 0;
-    background: url("../../img/mobile/radio-active.svg") no-repeat 0 0;
+    background-color: $basic-green;
+    background-clip: content-box;
   }
+}
+
+.form__input-radio:not(:disabled):not(:checked) + .form__label-radio:hover::before {
+  border-color: #bababa;
+}
+
+.form__input-radio:disabled + .form__label-radio::before {
+  opacity: 0.3;
 }
 
 .form__contact-list {
@@ -298,13 +328,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 630px;
     padding: {
       top: 10px;
       left: 20px;
-    }
-    margin: {
-      top: 75px;
-      bottom: 65px;
     }
 
     &::placeholder {
@@ -313,6 +340,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     min-height: 170px;
   }
 }
@@ -346,30 +374,34 @@
   font-size: 16px;
   text-transform: uppercase;
   padding-left: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .form__input-check {
   display: none;
+}
 
-  & + .form__label-extra::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 0;
-    bottom: 0;
-    background: url("../../img/mobile/checkbox.svg") no-repeat 0 0;
-  }
+.form__input-check:checked + .form__label-extra::before {
+  background: url("../../img/mobile/tick.svg") no-repeat center;
+  background-size: 20px auto;
+  background-clip: content-box;
+}
 
-  &:checked + .form__label-extra::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 0;
-    bottom: 0;
-    background: url("../../img/mobile/checkbox-active.svg") no-repeat 0 0;
-  }
+.form__input-check:not(:disabled):not(:checked) + .form__label-extra:hover::before {
+  border-color: #bababa;
+}
+
+.form__input-check:disabled + .form__label-extra::before {
+  opacity: 0.3;
 }
 
 .form__submit {
@@ -383,6 +415,7 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: 100%;
+    justify-content: start;
   }
 }
 
@@ -434,8 +467,4 @@
   line-height: 16px;
   align-self: center;
   color: $black;
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-  }
 }

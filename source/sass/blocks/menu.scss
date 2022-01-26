@@ -48,10 +48,10 @@
     line-height: 24px;
     border: none;
     padding: {
-      top: 5px;
+      top: 0;
       bottom: 0;
     }
-    margin-left: 36px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +61,14 @@
 }
 
 .menu__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: {
       bottom: 6px;

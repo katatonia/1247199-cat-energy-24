@@ -2,6 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .copyright__text {
@@ -22,5 +31,5 @@
 .copyright__link {
   width: 30px;
   height: 35px;
-  background: url("../../img/mobile/logo-academy.png") no-repeat 0 0;
+  background: url("../../img/mobile/logo-academy.svg") no-repeat 0 0;
 }

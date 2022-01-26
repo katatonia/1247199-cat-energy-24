@@ -1,4 +1,10 @@
 .page-header {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
   @media (min-width: $desktop-width) {
     &--home {
       position: absolute;
@@ -32,13 +38,13 @@
     flex-direction: row;
     justify-content: space-between;
     padding: {
-      top: 30px;
+      top: 26px;
       bottom: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 62px;
+    padding-top: 55px;
   }
 }
 
@@ -65,13 +71,37 @@
 .page-header__logo-img {
   flex-basis: 40px;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 70px;
+  }
 }
 
 .page-header__logo-text {
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    margin-left: initial; //отступ от картинки
+    img {
+      width: 102px;
+      height: 18px;
+      margin: {
+        top: 2px;
+        left: 11px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    img {
+      width: 118px;
+      height: 30px;
+      padding-top: 5px;
+      margin-left: 14px;
+    }
   }
 }
 

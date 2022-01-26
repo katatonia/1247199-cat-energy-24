@@ -31,6 +31,10 @@ li {
   list-style: none;
 }
 
+input {
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,7 +61,7 @@ li {
 
 .container {
   box-sizing: border-box;
-  max-width: 748px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-right: 20px;
