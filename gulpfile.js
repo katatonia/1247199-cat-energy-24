@@ -2,19 +2,24 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
+import minify from 'gulp-htmlmin';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -23,7 +28,7 @@ const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
