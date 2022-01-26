@@ -7,8 +7,8 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import svgstore from 'gulp-svgstore';
 import svgo from 'gulp-svgmin';
-import svg from 'gulp-svgstore';
 import del from 'del';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
@@ -66,7 +66,7 @@ const createWebP = () => {
 
 // SVG
 const svg = () => {
-  gulp.src('source/img/*.svg')
+  return gulp.src('source/img/**/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'))
 }
@@ -84,9 +84,9 @@ const sprite = () => {
 //Copy
 const copy = (done) => {
   gulp.src([
-    'source/sass/fonts/*.{woff2,woff}',
-    'source/img/favicons/*.{png,webp}',
-    './*.{ico,webmanifest}',
+    'source/fonts/**/*.{woff,woff2}',
+    'source/img/**',
+    './*.{ico,webmanifest}'
   ], {
     base: 'source'
   })
@@ -121,7 +121,7 @@ const reload = (done) => {
 // Watcher
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 

@@ -308,10 +308,17 @@
 .form__contact-list-item {
   display: flex;
   margin-bottom: 13px;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     flex-basis: calc(50% - 40px);
   }
+}
+
+.form__contact-list-img {
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 
 .form__textarea {

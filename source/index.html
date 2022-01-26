@@ -28,7 +28,7 @@
           <img src="img/mobile/logo-text.svg" alt="Логотип магазина «Cat Energy»">
         </span>
       </a>
-      <nav class="menu">
+      <nav class="menu menu--closed">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link menu__link--active" href="#"> Главная</a>
@@ -62,7 +62,7 @@
             <h2 class="products__heading products__heading--slim">Похудение</h2>
             <p class="products__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="catalog.html" class="products__link">Каталог slim</a>
+            <a class="products__link" href="catalog.html">Каталог slim</a>
           </li>
           <li class="products__item">
             <h2 class="products__heading products__heading--pro">Набор массы</h2>
@@ -141,9 +141,9 @@
           <ul class="slider__list">
             <li class="slider__item slider__item--before">
               <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/slider-cat.webp, img/desktop/slider-cat@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/slider-cat.webp, img/tablet/slider-cat@2x.webp 2x">
-                <source type="image/webp" srcset="img/mobile/slider-cat.webp, img/mobile/slider-cat@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/slider-cat.webp 1x, img/desktop/slider-cat@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/slider-cat.webp 1x, img/tablet/slider-cat@2x.webp 2x">
+                <source type="image/webp" srcset="img/mobile/slider-cat.webp 1x, img/mobile/slider-cat@2x.webp 2x">
 
                 <source media="(min-width: 1200px)" srcset="img/desktop/slider-cat.png 1x, img/desktop/slider-cat@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/tablet/slider-cat.png 1x, img/tablet/slider-cat@2x.png 2x">
@@ -188,29 +188,42 @@
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
+              <svg class="social__img" width="25" height="15">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__list">
             <a class="social__link social__link--inst" href="#">
               <span class="visually-hidden">Мы в инстаграм</span>
+              <svg class="social__img" width="25" height="15">
+                <use xlink:href="img/sprite.svg#inst-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--fb" href="#">
               <span class="visually-hidden">Мы в фейсбук</span>
+              <svg class="social__img" width="25" height="15">
+                <use xlink:href="img/sprite.svg#fb-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__img" width="25" height="15">
+            <use xlink:href="img/sprite.svg#logo-academy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
 
-</body>
+  <script src="js/menu-toggle.js"></script>
 
-<script src="js/menu-toggle.js"></script>
+</body>
 
 </html>

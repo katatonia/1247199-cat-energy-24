@@ -31,25 +31,4 @@
 
 .social__link {
   display: block;
-
-  &--vk {
-    width: 25px;
-    height: 15px;
-    background: url("../../img/mobile/vk-icon.svg") no-repeat 0 0;
-    background-size: contain;
-  }
-
-  &--inst {
-    width: 16px;
-    height: 16px;
-    background: url("../../img/mobile/inst-icon.svg") no-repeat 0 0;
-    background-size: contain;
-  }
-
-  &--fb {
-    width: 22px;
-    height: 22px;
-    background: url("../../img/mobile/fb-icon.svg") no-repeat 0 0;
-    background-size: contain;
-  }
 }
