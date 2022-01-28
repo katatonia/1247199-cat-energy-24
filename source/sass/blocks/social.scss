@@ -1,9 +1,8 @@
 .social {
   padding: {
     top: 20px;
-    bottom: 20px;
+    bottom: 17px;
   }
-  margin: 20px;
   border: {
     top: 1px solid #d9d9d9;
     bottom: 1px solid #d9d9d9;
@@ -20,6 +19,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: {
+    right: 67px;
+    left: 63px;
+  }
 
   &:nth-child(2n) {
     margin: {
@@ -27,8 +30,16 @@
       left: 35px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__link {
   display: block;
+}
+
+.social__link:hover .social__img {
+  fill: $basic-green;
 }

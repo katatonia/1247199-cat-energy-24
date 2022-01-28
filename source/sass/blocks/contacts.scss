@@ -1,20 +1,20 @@
 .contacts {
   position: relative;
-  background-color: #f2f2f2;
+  background-color: $white;
 }
 
 .contacts__container {
   display: flex;
   justify-content: space-between;
   padding: {
-    top: 25px;
+    top: 26px;
     bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {
     padding: {
       top: 55px;
-      bottom: 55px;
+      bottom: 62px;
     }
     top: 90px;
     bottom: 90px;
@@ -24,10 +24,13 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     max-width: 570px;
-    margin-bottom: 10px;
+    top: 96px;
+    bottom: 104px;
+    left: 107px;
     padding: {
-      left: 75px;
-      right: 85px;
+      top: 60px;
+      left: 83px;
+      right: 77px;
     }
     z-index: 1;
     background-color: $white;
@@ -48,7 +51,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
-    padding-left: 40px;
+    padding: {
+      top: 5px;
+      left: 49px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -68,7 +74,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    padding-right: 40px;
+    padding: {
+      top: 2px;
+      right: 50px;
+    }
 
     &--br {
       display: inline-block;
@@ -79,6 +88,11 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     padding: 0;
+    margin-top: -2px;
+
+    &--br {
+      padding-top: 18px;
+    }
   }
 }
 
@@ -86,6 +100,10 @@
   display: block;
   width: 100%;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 
   @media (min-width: $desktop-width) {
     position: relative;

@@ -321,6 +321,10 @@
   right: 20px;
 }
 
+.form__contact-list-item:focus .form__contact-list-img {
+  fill: $basic-green;
+}
+
 .form__textarea {
   font-family: $OswaldRegular;
   width: 100%;

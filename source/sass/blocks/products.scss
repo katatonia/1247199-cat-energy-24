@@ -18,13 +18,14 @@
 .products__item {
   background-color: $basic-grey;
   padding: 20px;
+  padding-bottom: 22px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding: {
       top: 73px;
-      bottom: 57px;
-      left: 53px;
+      bottom: 60px;
+      left: 62px;
     }
     margin-bottom: 30px;
 
@@ -38,7 +39,7 @@
     padding: {
       top: 0;
       right: 0;
-      bottom: 58px;
+      bottom: 61px;
       left: 52px;
     }
     margin-bottom: 0;
@@ -80,9 +81,9 @@
       &::after {
         position: absolute;
         content: "";
-        right: 42px;
+        right: 53px;
         width: 200px;
-        height: 210px;
+        height: 208px;
         background: url("../../img/tablet/products-cat-slim.svg");
         background-repeat: no-repeat;
         background-position: center;
@@ -117,7 +118,7 @@
       width: 70px;
       height: 50px;
       background: url("../../img/mobile/products-cat-pro.svg") no-repeat 0 0;
-      top: 2px;
+      top: 4px;
       left: -7px;
     }
 
@@ -126,7 +127,7 @@
         content: "";
         position: absolute;
         top: 8px;
-        right: 5px;
+        right: 14px;
         width: 275px;
         height: 220px;
         background-image: url("../../img/tablet/products-cat-pro.svg");
@@ -170,10 +171,10 @@
   @media (min-width: $desktop-width) {
     line-height: 36px;
     padding: {
-      top: 79px;
+      top: 78px;
       right: 0;
       bottom: 73px;
-      left: 200px;
+      left: 162px;
     }
   }
 }
@@ -183,15 +184,15 @@
   font-family: $arial;
   padding-bottom: 22px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     padding: {
-      right: 294px;
-      bottom: 54px;
+      right: 305px;
+      bottom: 57px;
     }
     margin: 0;
     border: none;
@@ -200,7 +201,7 @@
   @media (min-width: $desktop-width) {
     padding: {
       right: 30px;
-      bottom: 27px;
+      bottom: 31px;
     }
   }
 }
@@ -225,17 +226,17 @@
   }
 
   &::before {
-    width: 19px;
-    height: 3px;
+    width: 17px;
+    height: 2px;
     order: 1;
-    margin-left: 10px;
+    margin-left: 16px;
     background-color: $black;
   }
 
   &::after {
     order: 2;
-    margin-top: 1px;
-    border: 5px solid transparent;
+    margin-top: 2px;
+    border: 6px solid transparent;
     border-left-color: $black;
   }
 
@@ -251,6 +252,12 @@
 
     &::before {
       margin-left: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      margin-left: 26px;
     }
   }
 }
