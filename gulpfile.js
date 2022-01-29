@@ -14,6 +14,7 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
 // Styles
+
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
