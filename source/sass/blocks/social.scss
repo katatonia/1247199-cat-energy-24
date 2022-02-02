@@ -36,8 +36,8 @@
   }
 }
 
-.social__item:nth-child(2) {
-  margin: 0 35px;
+.social__item + .social__item {
+  margin-left: 22px;
 }
 
 .social__link {

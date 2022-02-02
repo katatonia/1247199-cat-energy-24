@@ -29,7 +29,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 21px;
+    padding: {
+      right: 21px;
+      bottom: 7px;
+    }
   }
 
   @media (min-width: $tablet-width) {
