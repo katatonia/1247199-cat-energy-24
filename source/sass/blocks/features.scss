@@ -23,8 +23,9 @@
 
 .features__title {
   padding: 0 16px;
-  position: relative;
-  bottom: 9px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
   font: {
     family: $arial;
     size: 12px;
@@ -35,15 +36,14 @@
     transform: lowercase;
   }
   background-color: #eaeaea;
+  color: $black;
+  transform: translate(-50%, 50%);
 
   @media (min-width: $tablet-width) {
-    padding: 0 16px;
+    padding: 0 9px;
     font-size: 14px;
     background-color: #ffffff;
-
-    br {
-      display: none;
-    }
+    white-space: nowrap;
   }
 
   @media (min-width: $desktop-width) {

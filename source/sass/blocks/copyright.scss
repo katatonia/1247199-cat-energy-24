@@ -15,7 +15,6 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding-right: 10px;
   }
 }
 
@@ -46,12 +45,16 @@
   background: url("../../img/mobile/logo-academy.svg") no-repeat 0 0;
 
   @media (min-width: $tablet-width) {
-    padding-right: 9px;
+    padding-right: 10px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-right: 0;
   }
+}
+
+.copyright__link:hover .copyright__img {
+  color: $basic-green;
 }
 
 .copyright__img {

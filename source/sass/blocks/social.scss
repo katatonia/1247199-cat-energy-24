@@ -36,10 +36,50 @@
   }
 }
 
+.social__item:nth-child(2) {
+  margin: 0 35px;
+}
+
 .social__link {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 22px;
+
+      svg {
+        width: 30px;
+        height: 22px;
+      }
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--fb {
+      width: 28px;
+      height: 33px;
+
+      svg {
+        width: 28px;
+        height: 33px;
+      }
+    }
+  }
 }
 
 .social__link:hover .social__img {
-  fill: $basic-green;
+  color: $basic-green;
+}
+
+.social__link:focus .social__img {
+  opacity: 0.3;
 }

@@ -22,7 +22,7 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    padding-right: 40px;
+    padding-right: 37px;
   }
 }
 
@@ -42,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     padding: {
-      top: 20px;
+      top: 19px;
       right: 37px;
       bottom: 10px;
       left: 37px;
@@ -67,7 +67,7 @@
     padding: {
       top: 15px;
       right: 0;
-      bottom: 15px;
+      bottom: 16px;
       left: 0;
     }
     flex-direction: row;
@@ -84,7 +84,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: {
-    top: 12px;
+    top: 11px;
     bottom: 13px;
   }
 
@@ -93,7 +93,7 @@
     line-height: 20px;
     padding: {
       top: 6px;
-      bottom: 9px;
+      bottom: 10px;
     }
   }
 
@@ -110,7 +110,8 @@
   justify-content: space-between;
 
   @media (min-width: $desktop-width) {
-    flex-basis: 300px;
+    flex-basis: 288px;
+    padding-top: 7px;
   }
 }
 
@@ -139,10 +140,10 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
-  height: 40px;
+  padding: 10px;
   margin: {
     top: 15px;
-    bottom: 17px;
+    bottom: 18px;
   }
   text-transform: uppercase;
   background-color: $basic-green;

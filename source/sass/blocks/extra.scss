@@ -15,7 +15,7 @@
   line-height: 24px;
   color: $black;
   margin: {
-    top: 25px;
+    top: 26px;
     bottom: 35px;
   }
 
@@ -23,12 +23,11 @@
     content: "";
     position: absolute;
     top: 63%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 0;
+    right: -20px;
     display: block;
-    width: 100vw;
     height: 2px;
-    background-color: $basic-green;
+    background-color: #68b738;
   }
 
   span {
@@ -40,11 +39,23 @@
 
   @media (min-width: $tablet-width) {
     margin: {
-      top: 30px;
+      top: 67px;
       bottom: 81px;
     }
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 63%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: block;
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+    }
 
     span {
       padding: {
@@ -55,6 +66,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    margin: {
+      top: 77px;
+      bottom: 79px;
+    }
+
+    span {
+      padding-left: 40px;
+      transform: translateX(-40px);
+    }
   }
 }

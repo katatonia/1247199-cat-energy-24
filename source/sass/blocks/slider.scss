@@ -13,9 +13,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    background-color: $basic-grey;
+    background-color: transparent;
     padding-bottom: 0;
-    background-image: linear-gradient($white 0, $white 125px, $basic-grey 125px, $basic-grey 100%);
+    background-image: none;
+    transform: translateY(-51px);
   }
 }
 
@@ -38,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     width: 592px;
-    top: -53px;
+    top: initial;
   }
 }
 
@@ -79,7 +80,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: 26px;
   }
 }
 

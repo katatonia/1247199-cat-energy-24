@@ -17,7 +17,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 45px;
+    padding-bottom: 20px;
   }
 }
 
@@ -82,7 +82,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 53px;
+    margin-bottom: 75px;
     padding: {
       right: 10px;
       left: 10px;
@@ -101,15 +101,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 34px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    margin-bottom: 47px;
+    margin-bottom: 60px;
   }
 }
 
