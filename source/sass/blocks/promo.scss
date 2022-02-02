@@ -23,18 +23,18 @@
     background-image:
       url("../../img/mobile/promo-bg@2x.png"),
       linear-gradient(rgb(98, 165, 59) 302px, #ffffff 302px);
-    background-size: contain;
+    background-size: auto 302px, contain;
 
     &::after {
       background: url("../../img/mobile/promo@2x.png") no-repeat 0 0;
-      background-size: contain;
+      background-size: auto 268px;
     }
   }
 
   @media (min-width: $tablet-width) {
     background: none;
     padding: {
-      top: 65px;
+      top: 61px;
       bottom: 525px;
       left: 95px;
     }
@@ -54,6 +54,10 @@
       &::after {
         background: url("../../img/tablet/promo@2x.png") no-repeat 0 0;
         background-size: contain;
+        width: 707px;
+        min-height: 606px;
+        bottom: 2px;
+        left: 386px;
       }
     }
   }
@@ -76,7 +80,8 @@
       content: "";
       position: absolute;
       top: 140px;
-      left: 833px;
+      left: 50%;
+      margin-left: 110px;
       width: 550px;
       min-height: 500px;
       background: url("../../img/desktop/promo.png") no-repeat 0 0;
@@ -93,14 +98,20 @@
       background-size: contain;
 
       &::after {
-        background: url("../../img/desktop/promo@2x.png") no-repeat 0 0;
-        background-size: contain;
+        background-image: url("../../img/desktop/promo@2x.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: auto 500px, contain;
       }
     }
   }
 }
 
 .promo__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 23px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: {
       left: 84px;

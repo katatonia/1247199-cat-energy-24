@@ -1,9 +1,8 @@
 .social {
   padding: {
     top: 20px;
-    bottom: 20px;
+    bottom: 17px;
   }
-  margin: 20px;
   border: {
     top: 1px solid #d9d9d9;
     bottom: 1px solid #d9d9d9;
@@ -20,6 +19,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: {
+    right: 67px;
+    left: 63px;
+  }
 
   &:nth-child(2n) {
     margin: {
@@ -27,29 +30,56 @@
       left: 35px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.social__item + .social__item {
+  margin-left: 22px;
 }
 
 .social__link {
   display: block;
 
-  &--vk {
-    width: 25px;
-    height: 15px;
-    background: url("../../img/mobile/vk-icon.svg") no-repeat 0 0;
-    background-size: contain;
-  }
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 22px;
 
-  &--inst {
-    width: 16px;
-    height: 16px;
-    background: url("../../img/mobile/inst-icon.svg") no-repeat 0 0;
-    background-size: contain;
-  }
+      svg {
+        width: 30px;
+        height: 22px;
+      }
+    }
 
-  &--fb {
-    width: 22px;
-    height: 22px;
-    background: url("../../img/mobile/fb-icon.svg") no-repeat 0 0;
-    background-size: contain;
+    &--inst {
+      width: 23px;
+      height: 23px;
+
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--fb {
+      width: 28px;
+      height: 33px;
+
+      svg {
+        width: 28px;
+        height: 33px;
+      }
+    }
   }
+}
+
+.social__link:hover .social__img {
+  color: $basic-green;
+}
+
+.social__link:focus .social__img {
+  opacity: 0.3;
 }

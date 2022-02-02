@@ -2,25 +2,28 @@
 @import "global.scss";
 @import "fonts.scss";
 
-//index
+// common
 @import "blocks/menu.scss";
-@import "blocks/promo.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-body.scss";
-@import "blocks/products.scss";
-@import "blocks/advantages.scss";
-@import "blocks/example.scss";
-@import "blocks/features.scss";
-@import "blocks/slider.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 
-//form
+// index
+@import "blocks/promo.scss";
+@import "blocks/products.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
+@import "blocks/features.scss";
+@import "blocks/slider.scss";
+
+
+// form
 @import "blocks/form.scss";
 
-//catalog
+// catalog
 @import "blocks/catalog.scss";
 @import "blocks/advice.scss";
 @import "blocks/benefit.scss";

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/32x32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -16,7 +16,7 @@
 
   <header class="page-header">
     <div class="page-header__container container">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <span class="page-header__logo-img">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/desktop/logo-img-desktop.svg">
@@ -54,8 +54,12 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__photo-container">
-              <a href="#" class="catalog__photo">
+              <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/catalog/catalog-chicken-500.webp 1x, img/desktop/catalog/2x/catalog-chicken-500@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/catalog/catalog-chicken-500.webp 1x, img/tablet/catalog/2x/catalog-chicken-500@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/catalog/catalog-chicken-500.webp 1x, img/mobile/catalog/2x/catalog-chicken-500@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                   srcset="img/desktop/catalog/catalog-chicken-500.png 1x,
                           img/desktop/catalog/2x/catalog-chicken-500@2x.png 2x">
@@ -81,7 +85,7 @@
                 </li>
                 <li class="catalog__specs-item">
                   <span>Цена</span>
-                  <span>700 <span class="catalog__uppercase">р.</span></big></span>
+                  <span>700 <span class="catalog__uppercase">р.</span></span>
                 </li>
               </ul>
             </div>
@@ -92,6 +96,10 @@
             <div class="catalog__photo-container">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/catalog/catalog-chicken-1000.webp 1x, img/desktop/catalog/2x/catalog-chicken-1000@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/catalog/catalog-chicken-1000.webp 1x, img/tablet/catalog/2x/catalog-chicken-1000@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/catalog/catalog-chicken-1000.webp, img/mobile/catalog/2x/catalog-chicken-1000@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                   srcset="img/desktop/catalog/catalog-chicken-1000.png 1x,
                           img/desktop/catalog/2x/catalog-chicken-1000@2x.png 2x">
@@ -117,7 +125,7 @@
                 </li>
                 <li class="catalog__specs-item">
                   <span>Цена</span>
-                  <span>1000 <span class="catalog__uppercase">р.</span></span>
+                  <span>1000<span class="catalog__uppercase">р.</span></span>
                 </li>
               </ul>
             </div>
@@ -128,6 +136,10 @@
             <div class="catalog__photo-container">
               <a href="#">
                 <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/catalog/catalog-fish-500.webp 1x, img/desktop/catalog/2x/catalog-fish-500@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/catalog/catalog-fish-500.webp 1x, img/tablet/catalog/2x/catalog-fish-500@2x.webp 2x">
+                <source type="image/webp" srcset="img/mobile/catalog/catalog-fish-500.webp 1x, img/mobile/catalog/2x/catalog-fish-500@2x.webp 2x">
+
                 <source media="(min-width: 1200px)"
                 srcset="img/desktop/catalog/catalog-fish-500.png 1x,
                         img/desktop/catalog/2x/catalog-fish-500@2x.png 2x">
@@ -153,7 +165,7 @@
                 </li>
                 <li class="catalog__specs-item">
                   <span>Цена</span>
-                  <span>700 <span class="catalog__uppercase">р.</span></span>
+                  <span>700<span class="catalog__uppercase">р.</span></span>
                 </li>
               </ul>
             </div>
@@ -164,6 +176,10 @@
             <div class="catalog__photo-container">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/catalog/catalog-fish-1000.webp 1x, img/desktop/catalog/2x/catalog-fish-1000@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/catalog/catalog-fish-1000.webp 1x, img/tablet/catalog/2x/catalog-fish-1000@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/catalog/catalog-fish-1000.webp 1x, img/mobile/catalog/2x/catalog-fish-1000@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                   srcset="img/desktop/catalog/catalog-fish-1000.png 1x,
                           img/desktop/catalog/2x/catalog-fish-1000@2x.png 2x">
@@ -189,7 +205,7 @@
                 </li>
                 <li class="catalog__specs-item">
                   <span>Цена</span>
-                  <span>1000 <span class="catalog__uppercase">р.</span></span>
+                  <span>1000<span class="catalog__uppercase">р.</span></span>
                 </li>
               </ul>
             </div>
@@ -198,18 +214,22 @@
 
           <li class="catalog__item">
             <div class="catalog__photo-container">
-              <picture>
-                <source media="(min-width: 1200px)"
-                srcset="img/desktop/catalog/catalog-buckwheat-500.png 1x,
-                        img/desktop/catalog/2x/catalog-buckwheat-500@2x.png 2x">
-                <source media="(min-width: 768px)"
-                srcset="img/tablet/catalog/catalog-buckwheat-500.png 1x,
-                        img/tablet/catalog/2x/catalog-buckwheat-500@2x.png 2x">
-                <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-buckwheat-500.png" srcset="img/mobile/catalog/2x/catalog-buckwheat-500@2x.png 2x" alt="Фото товара" width="69" height="86">
-              </picture>
-            </a>
+              <a href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/catalog/catalog-buckwheat-500.webp 1x, img/desktop/catalog/2x/catalog-buckwheat-500@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/catalog/catalog-buckwheat-500.webp 1x, img/tablet/catalog/2x/catalog-buckwheat-500@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/catalog/catalog-buckwheat-500.webp 1x, img/mobile/catalog/2x/catalog-buckwheat-500@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                  srcset="img/desktop/catalog/catalog-buckwheat-500.png 1x,
+                          img/desktop/catalog/2x/catalog-buckwheat-500@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/tablet/catalog/catalog-buckwheat-500.png 1x,
+                          img/tablet/catalog/2x/catalog-buckwheat-500@2x.png 2x">
+                  <img class="catalog__img catalog__img--500" src="img/mobile/catalog/catalog-buckwheat-500.png" srcset="img/mobile/catalog/2x/catalog-buckwheat-500@2x.png 2x" alt="Фото товара" width="69" height="86">
+                </picture>
+              </a>
             </div>
-            <a href="#">
             <div class="catalog__wrapper">
               <a href="#">
                 <h2 class="catalog__heading">Cat energy slim 500 г</h2>
@@ -225,7 +245,7 @@
                 </li>
                 <li class="catalog__specs-item">
                   <span>Цена</span>
-                  <span>400 <span class="catalog__uppercase">р.</span></span>
+                  <span>400<span class="catalog__uppercase">р.</span></span>
                 </li>
               </ul>
             </div>
@@ -236,6 +256,10 @@
             <div class="catalog__photo-container">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/catalog/catalog-buckwheat-1000.webp 1x, img/desktop/catalog/2x/catalog-buckwheat-1000@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/catalog/catalog-buckwheat-1000.webp 1x, img/tablet/catalog/2x/catalog-buckwheat-1000@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/catalog/catalog-buckwheat-1000.webp 1x, img/mobile/catalog/2x/catalog-buckwheat-1000@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                   srcset="img/desktop/catalog/catalog-buckwheat-1000.png 1x,
                           img/desktop/catalog/2x/catalog-buckwheat-1000@2x.png 2x">
@@ -248,7 +272,7 @@
             </div>
             <div class="catalog__wrapper">
               <a href="#">
-                <h2 class="catalog__heading">Cat energy pro 1000 г</h2>
+                <h2 class="catalog__heading">Cat energy slim 1000 г</h2>
               </a>
               <ul class="catalog__specs-list">
                 <li class="catalog__specs-item">
@@ -261,7 +285,7 @@
                 </li>
                 <li class="catalog__specs-item">
                   <span>Цена</span>
-                  <span>700 <span class="catalog__uppercase">р.</span></span>
+                  <span>700<span class="catalog__uppercase">р.</span></span>
                 </li>
               </ul>
             </div>
@@ -272,6 +296,10 @@
             <div class="catalog__photo-container">
               <a href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/catalog/catalog-rice-500.webp 1x, img/desktop/catalog/2x/catalog-rice-500@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/catalog/catalog-rice-500.webp 1x, img/tablet/catalog/2x/catalog-rice-500@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/catalog/catalog-rice-500.webp 1x, img/mobile/catalog/2x/catalog-rice-500@2x.webp 2x">
+
                   <source media="(min-width: 1200px)"
                   srcset="img/desktop/catalog/catalog-rice-500.png 1x,
                           img/desktop/catalog/2x/catalog-rice-500@2x.png 2x">
@@ -297,7 +325,7 @@
                 </li>
                 <li class="catalog__specs-item">
                   <span>Цена</span>
-                  <span>500 <span class="catalog__uppercase">р.</span></span>
+                  <span>500<span class="catalog__uppercase">р.</span></span>
                 </li>
               </ul>
             </div>
@@ -400,29 +428,42 @@
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">Мы Вконтакте</span>
+              <svg class="social__img" width="23" height="16" viewBox="0 0 23 16">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg>
             </a>
           </li>
-          <li class="social__list">
+          <li class="social__item">
             <a class="social__link social__link--inst" href="#">
               <span class="visually-hidden">Мы в инстаграм</span>
+              <svg class="social__img" width="16" height="16" viewBox="0 0 16 16">
+                <use xlink:href="img/sprite.svg#inst-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--fb" href="#">
               <span class="visually-hidden">Мы в фейсбук</span>
+              <svg class="social__img" width="22" height="22" viewBox="0 0 22 22">
+                <use xlink:href="img/sprite.svg#fb-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__img" width="27" height="34" viewBox="0 0 27 34">
+            <use xlink:href="img/sprite.svg#logo-academy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
 
-</body>
+  <script src="js/menu-toggle.js"></script>
 
-<script src="js/menu-toggle.js"></script>
+</body>
 
 </html>

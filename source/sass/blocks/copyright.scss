@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 19px;
 
   &:hover,
   &:focus {
@@ -10,6 +11,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }
 
@@ -24,12 +29,38 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 20px;
+    padding: {
+      right: 21px;
+      bottom: 7px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 19px;
   }
 }
 
 .copyright__link {
   width: 30px;
   height: 35px;
+  display: block;
+  text-align: center;
   background: url("../../img/mobile/logo-academy.svg") no-repeat 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.copyright__link:hover .copyright__img {
+  color: $basic-green;
+}
+
+.copyright__img {
+  width: 27px;
+  height: 34px;
 }
