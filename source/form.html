@@ -48,7 +48,7 @@
   <main class="page-main">
 
     <section class="form">
-      <div class="container">
+      <div class="container form__container">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
@@ -84,13 +84,13 @@
               </li>
               <li class="form__radio-list-item">
                 <input class="form__input-radio" type="radio" name="radio-btn" id="advice-radio">
-                <label class="form__label-radio" for="advice-radio">Не знаю (нужен вас совет)</label>
+                <label class="form__label-radio" for="advice-radio">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__fieldset">
-            <h2 class="form__heading"><span>Контактные данные<br>(владельца кота)</span></h2>
+          <fieldset class="form__fieldset form__contact">
+            <h2 class="form__heading"><span>Контактные данные <br>(владельца кота)</span></h2>
             <ul class="form__contact-list">
               <li class="form__contact-list-item">
                 <label class="form__label-text" for="email-field">E-mail:<sup>*</sup></label>
@@ -104,7 +104,7 @@
                 <label class="form__label-text" for="tel-field">Телефон:<sup>*</sup></label>
                 <input class="form__input-text" type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90"
                   required>
-                  <svg class="form__contact-list-img" width="20" height="15">
+                  <svg class="form__contact-list-img" width="20" height="20">
                     <use xlink:href="img/sprite.svg#phone-icon"></use>
                   </svg>
               </li>

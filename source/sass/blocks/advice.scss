@@ -43,8 +43,8 @@
   @media (min-width: $tablet-width) {
     padding: {
       top: 20px;
-      right: 30px;
-      bottom: 9px;
+      right: 37px;
+      bottom: 10px;
       left: 37px;
     }
     border: {
@@ -84,7 +84,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: {
-    top: 10px;
+    top: 12px;
     bottom: 13px;
   }
 
@@ -123,6 +123,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+
     &:nth-child(2) {
       padding-left: 50px;
     }
@@ -136,15 +139,10 @@
   font-size: 16px;
   line-height: 20px;
   border: none;
-  padding: {
-    top: 10px;
-    right: 0;
-    bottom: 10px;
-    left: 0;
-  }
+  height: 40px;
   margin: {
     top: 15px;
-    bottom: 18px;
+    bottom: 17px;
   }
   text-transform: uppercase;
   background-color: $basic-green;

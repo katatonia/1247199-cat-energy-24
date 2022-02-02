@@ -1,7 +1,7 @@
 .advantages__list {
   margin: {
-    top: 44px;
-    bottom: 46px;
+    top: 41px;
+    bottom: 49px;
   }
   counter-reset: advantages;
 
@@ -72,7 +72,7 @@
     display: block;
     margin: 0;
     padding: {
-      right: 89px;
+      right: 74px;
       left: 10px;
     }
 
@@ -137,10 +137,12 @@
 
 .advantages__text {
   font-family: $arial;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding-top: 0;
   }
 }
 

@@ -7,15 +7,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  max-width: 634px;
   margin: {
-    top: 20px;
+    top: 28px;
     right: auto;
-    bottom: 20px;
+    bottom: 28px;
     left: auto;
   }
   padding: {
-    top: 40px;
+    top: 46px;
     bottom: 40px;
   }
 
@@ -48,7 +47,7 @@
 
   &::before {
     content: "";
-    margin: 50px 0 50px;
+    padding-bottom: 58px;
     display: block;
     width: 240px;
     height: 68px;
@@ -63,15 +62,17 @@
 }
 
 .benefit__text {
-  flex-grow: 1;
   margin: 0;
   padding: {
-    right: 60px;
-    left: 60px;
+    right: 57px;
+    left: 55px;
   }
   text-align: center;
-  font-family: $arial;
-  line-height: 18px;
+  font: {
+    size: 16px;
+    family: $arial;
+  }
+  line-height: 20px;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {

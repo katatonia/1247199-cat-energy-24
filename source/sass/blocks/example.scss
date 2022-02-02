@@ -9,7 +9,6 @@
   @media (min-width: $desktop-width) {
     background-image: linear-gradient($white 0, $white 125px, $basic-grey 125px, $basic-grey 100%);
     border-top: none;
-    overflow: hidden;
     padding-top: 0;
   }
 }
@@ -100,7 +99,6 @@
 
 .example__features {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 10px;

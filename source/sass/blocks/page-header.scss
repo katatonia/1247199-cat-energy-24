@@ -52,7 +52,6 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
-  padding-left: 10px;
 
   &:hover,
   &:focus {
@@ -66,6 +65,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 0;
     flex-shrink: 0;
+    padding-left: 10px;
   }
 
   @media (min-width: $desktop-width) {

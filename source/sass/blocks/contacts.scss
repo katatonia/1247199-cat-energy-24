@@ -1,6 +1,10 @@
 .contacts {
   position: relative;
-  background-color: $white;
+  background-color: $basic-grey;
+
+  &--index {
+    background-color: $white;
+  }
 }
 
 .contacts__container {

@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 -120px;
-    padding-bottom: 53px;
+    padding-bottom: 60px;
     background-image: linear-gradient($white 0, $white 180px, $basic-grey 180px, $basic-grey 100%);
   }
 
@@ -60,6 +60,12 @@
   text-align: center;
 }
 
+.slider__wrap {
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+}
+
 .slider__range {
   position: relative;
   margin-top: 11px;
@@ -67,7 +73,9 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 47px;
+    margin-top: 39px;
+    width: 571px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -112,9 +120,12 @@
   @media (min-width: $tablet-width) {
     width: 423px;
     height: 4px;
+    margin: {
+      right: 0;
+      left: 0;
+    }
     border-radius: 5px;
     background-color: $special-grey;
-    top: 10px;
   }
 }
 
@@ -131,7 +142,10 @@
   @media (min-width: $tablet-width) {
     width: 34px;
     height: 34px;
-    margin-left: 200px;
+    margin: {
+      top: 9px;
+      left: 206px;
+    }
     top: -10px;
     z-index: 1;
     background-image: radial-gradient($basic-green 0, $basic-green 4px, #ffffff 5px, #ffffff 100%);
