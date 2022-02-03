@@ -225,15 +225,15 @@
   }
 
   &:hover {
-    border-color: $special-grey;
+    border: 2px solid $special-grey;
   }
 
   &:focus {
-    border-color: $special-dark-grey;
+    border: 2px solid $special-dark-grey;
   }
 
   &:disabled {
-    border-color: #ff8282;
+    border: 2px solid #ff8282;
   }
 
   @media (min-width: $tablet-width) {
@@ -397,8 +397,9 @@
   }
 }
 
-.form__input-radio:not(:disabled):not(:checked) + .form__label-radio:hover::before {
-  border-color: #bababa;
+.form__input-radio:not(:disabled) + .form__label-radio:hover::before,
+.form__input-radio:not(:disabled) + .form__label-radio:focus::before {
+  border: 2px solid #bababa;
 }
 
 .form__input-radio:disabled + .form__label-radio::before {
@@ -584,8 +585,9 @@
   background-clip: content-box;
 }
 
-.form__input-check:not(:disabled):not(:checked) + .form__label-extra:hover::before {
-  border-color: #bababa;
+.form__input-check:not(:disabled) + .form__label-extra:hover::before,
+.form__input-check:not(:disabled) + .form__label-extra:focus::before {
+  border: 2px solid#bababa;
 }
 
 .form__input-check:disabled + .form__label-extra::before {

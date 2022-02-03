@@ -19,10 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: {
-    right: 67px;
-    left: 63px;
-  }
 
   &:nth-child(2n) {
     margin: {
@@ -37,7 +33,7 @@
 }
 
 .social__item + .social__item {
-  margin-left: 22px;
+  margin-left: 32px;
 }
 
 .social__link {

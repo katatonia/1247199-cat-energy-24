@@ -21,6 +21,11 @@
     border: none;
     background-color: transparent;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    width: 600px;
+  }
 }
 
 .menu__list {
@@ -35,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
+    flex-wrap: wrap;
   }
 }
 

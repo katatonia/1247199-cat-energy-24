@@ -79,10 +79,6 @@
     &:first-child {
       padding-top: 20px;
     }
-
-    &--br {
-      display: inline-block;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -110,7 +106,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 17%;
+    left: 50%;
+    top: 50%;
   }
 }
 
@@ -138,6 +135,10 @@
     font-size: 16px;
     line-height: 24px;
     padding-top: 0;
+
+    &--br {
+      display: inline-block;
+    }
   }
 }
 
