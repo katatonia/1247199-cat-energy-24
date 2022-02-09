@@ -161,8 +161,9 @@
     }
 
     &:active {
-      border: 2px solid $basic-green;
-      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+      border: 1px solid $basic-green;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     }
   }
 }
+
