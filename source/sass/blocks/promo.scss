@@ -121,6 +121,7 @@
 
 .promo__title {
   position: relative;
+  width: 280px;
   font: {
     size: 36px;
     weight: 400;
@@ -128,22 +129,24 @@
   line-height: 36px;
   color: $white;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: {
     top: 27px;
     bottom: 23px;
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 440px;
+    width: 440px;
     font-size: 60px;
     line-height: 60px;
     color: $black;
     padding: {
       top: 0;
       bottom: 40px;
-    };
+    }
+    margin: 0;
     text-align: left;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
