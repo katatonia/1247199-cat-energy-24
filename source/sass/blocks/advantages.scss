@@ -93,24 +93,21 @@
   }
 }
 
-.advantages__item::before {
+.advantages__item::after {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 55%;
-    right: 38%;
-    display: block;
     content: counter(advantages);
-    counter-increment: advantages;
+    position: absolute;
+    right: 95px;
+    top: 110px;
     font-size: 280px;
     color: #f2f2f2;
+    counter-increment: advantages;
     z-index: -1;
-    height: 290px;
-    bottom: 0;
-    width: 88px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 17%;
+    right: 0;
+    top: 115px;
   }
 }
 
