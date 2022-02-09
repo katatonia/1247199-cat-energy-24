@@ -225,11 +225,13 @@
   }
 
   &:hover {
-    border-color: $special-grey;
+    border: 1px solid $special-grey;
+    box-shadow: 0 2px 6px $special-grey;
   }
 
   &:focus {
-    border-color: $special-dark-grey;
+    border: 1px solid $special-green;
+    box-shadow: 0 2px 6px $special-green;
   }
 
   &:disabled {
@@ -398,7 +400,8 @@
 }
 
 .form__input-radio:not(:disabled):not(:checked) + .form__label-radio:hover::before {
-  border-color: #bababa;
+  border-color: $basic-green;
+  box-shadow: 0 2px 6px $basic-green;
 }
 
 .form__input-radio:disabled + .form__label-radio::before {
@@ -473,11 +476,22 @@
   }
   padding: 0;
   padding-top: 3px;
+  outline: none;
 
   &::placeholder {
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  &:hover {
+    border: 1px solid $special-grey;
+    box-shadow: 0 2px 6px $special-grey;
+  }
+
+  &:focus {
+    border: 1px solid $basic-green;
+    box-shadow: 0 2px 6px $basic-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -556,7 +570,7 @@
 
   &::before {
     content: "";
-    display: block;
+    display: inline-block;
     position: absolute;
     width: 28px;
     height: 30px;
@@ -578,14 +592,20 @@
   }
 }
 
+.form__input-check {
+  opacity: 0;
+}
+
 .form__input-check:checked + .form__label-extra::before {
   background: url("../../img/mobile/tick.svg") no-repeat center;
   background-size: 20px auto;
   background-clip: content-box;
 }
 
-.form__input-check:not(:disabled):not(:checked) + .form__label-extra:hover::before {
-  border-color: #bababa;
+.form__input-check:not(:disabled):not(:checked) + .form__label-extra:hover::before,
+.form__input-check:not(:disabled):not(:checked) + .form__label-extra:focus::before {
+  border-color: $special-grey;
+  box-shadow: 0 2px 6px $special-grey;
 }
 
 .form__input-check:disabled + .form__label-extra::before {
