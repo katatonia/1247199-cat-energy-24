@@ -20,6 +20,15 @@
     flex-grow: 1;
     border: none;
     background-color: transparent;
+    margin: {
+      top: 17px;
+      left: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    width: 600px;
   }
 }
 
@@ -29,6 +38,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     padding-right: 11px;
   }
