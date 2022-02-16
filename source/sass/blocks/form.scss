@@ -192,23 +192,15 @@
   font-size: 16px;
   text-transform: uppercase;
   align-self: center;
-  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 7px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: {
-      right: 20px;
-      bottom: 5px;
-    }
   }
 }
 
-.form input {
+.contact-list__item input,
+.data-list__item input {
   font-family: "OswaldRegular", "Arial", sans-serif;
   flex-grow: 1;
   font-size: 16px;
@@ -221,6 +213,7 @@
     left: 16px;
   }
   overflow: hidden;
+  border-radius: 5px;
 
   &::placeholder {
     font-size: 16px;
@@ -282,6 +275,17 @@
     margin: 0;
   }
 
+  label {
+    padding-bottom: 10px;
+
+    @media (min-width: $desktop-width) {
+      padding: {
+        right: 10px;
+        bottom: 8px;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
@@ -339,75 +343,89 @@
 }
 
 .program-list__item {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
-.program-list__item label {
-  position: relative;
+.radio {
+  display: block;
   font-size: 16px;
   color: $special-dark-grey;
   text-transform: uppercase;
-  padding-left: 45px;
+  padding-left: 3em;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 54px;
+    padding-left: 3.7em;
   }
 }
 
-.program-list__item input[type="radio"] {
-  opacity: 0;
+.radio__input {
+  position: absolute;
+  appearance: none;
 }
 
-.program-list__item input {
-  position: relative;
-
-  & + label::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 13px;
-    height: 14px;
-    left: 0;
-    top: -2px;
-    padding: 8px;
-    border: 1px solid #cdcdcd;
-    border-radius: 50%;
-
-    @media (min-width: $tablet-width) {
-      width: 20px;
-      height: 20px;
-      top: -3px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: -4px;
-      left: -2px;
-    }
+.radio__btn {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  margin: {
+    top: -4px;
+    left: -3em;
   }
 
-  &:checked ~ label::before {
-    background-color: $basic-green;
-    background-clip: content-box;
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 38px;
+    height: 38px;
   }
 }
 
-.program-list__item input:not(:disabled):not(:checked) + label:hover::before,
-.program-list__item input:not(:disabled):not(:checked) + label:focus::before {
-  border-color: $basic-green;
-  box-shadow: 0 2px 6px $basic-green;
+.radio__input:checked + .radio__btn {
+  background-image: radial-gradient($basic-green 0, $basic-green 6px, $white 7px, $white 100%);
+  transition: 0.2s ease-in;
+
+  @media (min-width: $tablet-width) {
+    background-image: radial-gradient($basic-green 0, $basic-green 9px, $white 10px, $white 100%);
+  }
 }
 
-.program-list__item input:disabled + label::before {
+.radio__input:focus + .radio__btn {
+  border-color: $special-grey;
+  box-shadow: 0 2px 6px $special-grey;
+}
+
+.radio__input:checked:focus + .radio__btn,
+.radio__input:checked:hover + .radio__btn {
+  border-color: $special-green;
+  box-shadow: 0 2px 6px $special-green;
+}
+
+.radio__input:not(:checked):not(:disabled):focus + .radio__btn,
+.radio__input:not(:checked):not(:disabled):hover + .radio__btn {
+  border-color: $special-green;
+  box-shadow: 0 2px 6px $special-green;
+}
+
+.radio__input:disabled + .radio__btn,
+.radio__input:checked:disabled + .radio__btn {
   opacity: 0.3;
 }
 
@@ -434,10 +452,13 @@
 }
 
 .contact-list__item {
+  position: relative;
   display: flex;
   margin-bottom: 13px;
-  position: relative;
 
+  label {
+    padding-bottom: 5px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 21px;
@@ -445,6 +466,10 @@
 
   @media (min-width: $desktop-width) {
     flex-basis: calc(50% - 40px);
+
+    label {
+      padding-right: 20px;
+    }
   }
 }
 
@@ -484,6 +509,7 @@
   padding: 0;
   padding-top: 3px;
   outline: none;
+  border-radius: 5px;
 
   &::placeholder {
     font-size: 16px;
@@ -528,7 +554,7 @@
 }
 
 .add-list {
-  margin-top: 43px;
+  margin-top: 38px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -551,75 +577,79 @@
 }
 
 .add-list__item {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     flex-basis: calc(50% - 30px);
     margin: {
-      top: 11px;
-      bottom: 32px;
+      bottom: 33px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin: {
+      top: 0;
+      bottom: 0;
+    }
     flex-basis: 221px;
   }
 }
 
-.add-list__item label {
-  position: relative;
+.check {
+  display: block;
+  padding-left: 3em;
   color: $black;
   font-size: 16px;
   text-transform: uppercase;
-  padding-left: 46px;
-  bottom: 5px;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 28px;
-    height: 30px;
-    left: 0;
-    bottom: -5px;
-    border: 1px solid #cdcdcd;
-  }
-
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 59px;
-
-    &::before {
-      width: 38px;
-      height: 38px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 50px;
+    padding-top: 7px;
   }
 }
 
-.add-list__item input[type="checkbox"] {
-  opacity: 0;
+.check__input {
+  position: absolute;
+  appearance: none;
 }
 
-.add-list__item input:checked + label::before {
+.check__box {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  margin: {
+    top: -3px;
+    left: -3em;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 38px;
+    height: 38px;
+    margin-top: -7px;
+  }
+}
+
+.check__input:checked + .check__box {
   background: url("../../img/mobile/tick.svg") no-repeat center;
   background-size: 20px auto;
   background-clip: content-box;
 }
 
-.add-list__item input:not(:disabled):not(:checked) + label:hover::before,
-.add-list__item input:not(:disabled):not(:checked) + label:focus::before {
+.check__input:focus + .check__box {
   border-color: $special-grey;
   box-shadow: 0 2px 6px $special-grey;
 }
 
-.add-list__item input:disabled + label::before {
+.check__input:checked:focus + .check__box,
+.check__input:checked:hover + .check__box {
+  border-color: $special-green;
+  box-shadow: 0 2px 6px $special-green;
+}
+
+.check__input:disabled + .check__box,
+.check__input:checked:disabled + .check__box {
   opacity: 0.3;
 }
 
@@ -649,13 +679,11 @@
   text-transform: uppercase;
   padding: {
     top: 10px;
-    right: 0;
     bottom: 10px;
-    left: 0;
   }
   margin: {
-    top: 10px;
-    bottom: 20px;
+    top: 18px;
+    bottom: 19px;
   }
   border: none;
 
@@ -679,7 +707,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 15px;
+    margin: {
+      top: 14px;
+      right: 15px;
+    }
     width: 50%;
   }
 }
