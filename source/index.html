@@ -140,26 +140,33 @@
         </div>
 
         <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__item slider__item--before">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/desktop/slider-cat.webp 1x, img/desktop/slider-cat@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/slider-cat.webp 1x, img/tablet/slider-cat@2x.webp 2x">
-                <source type="image/webp" srcset="img/mobile/slider-cat.webp 1x, img/mobile/slider-cat@2x.webp 2x">
+          <div class="slider__wrapper">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--before">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/slider-cat-before.webp 1x, img/tablet/slider-cat-before@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile/slider-cat-before.webp 1x, img/mobile/slider-cat-before@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/desktop/slider-cat.png 1x, img/desktop/slider-cat@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/tablet/slider-cat.png 1x, img/tablet/slider-cat@2x.png 2x">
-                <img src="img/mobile/slider-cat.png" srcset="img/mobile/slider-cat@2x.png 2x" alt="Фото кота «до»" width="280" height="232">
-              </picture>
-            </li>
-          </ul>
-          <div class="slider__range">
-            <span class="slider__text slider__text--before">Было</span>
-            <div class="slider__wrap">
-              <div class="slider__scale"></div>
-              <div class="slider__toggle"></div>
+                  <source media="(min-width: 768px)" srcset="img/tablet/slider-cat-before.png 1x, img/tablet/slider-cat-before@2x.png 2x">
+                  <img src="img/mobile/slider-cat-before.png" srcset="img/mobile/slider-cat-before@2x.png 2x" alt="Фото кота «до»" width="280" height="232">
+                </picture>
+              </li>
+              <li class="slider__item slider__item--after">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/slider-cat-after.webp 1x, img/tablet/slider-cat-after@2x.webp 2x">
+                <source type="image/webp" srcset="img/mobile/slider-cat-after.webp 1x, img/mobile/slider-cat-after@2x.webp 2x">
+
+                <source media="(min-width: 768px)" srcset="img/tablet/slider-cat-after.png 1x, img/tablet/slider-cat-after@2x.png 2x">
+                <img src="img/mobile/slider-cat-after.png" srcset="img/mobile/slider-cat-after@2x.png 2x" alt="Фото кота «после»" width="280" height="232">
+              </li>
+            </ul>
+          </div>
+          <div class="slider__range range">
+            <span class="range__text range__text--before">Было</span>
+            <div class="range__wrap">
+              <div class="range__scale"></div>
+              <div class="range__toggle"></div>
             </div>
-            <span class="slider__text slider__text--after">Стало</span>
+            <span class="range__text range__text--after">Стало</span>
           </div>
         </div>
 
@@ -228,6 +235,7 @@
   </footer>
 
   <script src="js/menu-toggle.js"></script>
+  <script src="js/slider.js"></script>
 
 </body>
 

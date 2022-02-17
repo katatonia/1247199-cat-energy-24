@@ -1,0 +1,88 @@
+.range__wrap {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+}
+
+.range__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+    border-bottom: 1px dotted $black;
+  }
+}
+
+.range__scale {
+  width: 83px;
+  height: 12px;
+  border: 1px solid #cdcdcd;
+  border-radius: 12px;
+  margin: {
+    top: 4px;
+    right: 18px;
+    left: 18px;
+  }
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 423px;
+    height: 4px;
+    margin: {
+      right: 0;
+      left: 0;
+    }
+    border-radius: 5px;
+    background-color: $special-grey;
+  }
+}
+
+.range__toggle {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 25px;
+  width: 36px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: $basic-green;
+  transition: all ease 1s;
+
+  @media (min-width: $tablet-width) {
+    width: 34px;
+    height: 34px;
+    margin: {
+      top: 9px;
+      left: 206px;
+    }
+    top: -10px;
+    z-index: 1;
+    background-image: radial-gradient($basic-green 0, $basic-green 4px, #ffffff 5px, #ffffff 100%);
+    border: 1px solid $special-grey;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+
+
+    &:hover {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

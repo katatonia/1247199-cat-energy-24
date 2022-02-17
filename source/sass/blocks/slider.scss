@@ -20,11 +20,20 @@
   }
 }
 
-.slider__list {
-  position: relative;
-  margin: 0 auto;
-  width: 320px;
+.slider__wrapper {
+  width: 280px;
   height: 240px;
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+  position: relative;
+  left: 0;
+  width: 560px;
+  height: 240px;
+  margin: 0 auto;
+  transition: all ease 1s;
 
   @media (min-width: $tablet-width) {
     width: 592px;
@@ -43,28 +52,11 @@
   }
 }
 
-.slider__item {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-
-  &--after {
-    display: none;
-  }
-}
-
 .slider__heading {
   line-height: 20px;
   margin: 0;
   padding-bottom: 40px;
   text-align: center;
-}
-
-.slider__wrap {
-  @media (min-width: $tablet-width) {
-    padding-top: 9px;
-  }
 }
 
 .slider__range {
@@ -83,87 +75,3 @@
     margin-top: 26px;
   }
 }
-
-.slider__text {
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-  color: $black;
-  cursor: pointer;
-
-  &:hover {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  }
-
-  &:active {
-    border: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 29px;
-    border-bottom: 1px dotted $black;
-  }
-}
-
-.slider__scale {
-  width: 83px;
-  height: 12px;
-  border: 1px solid #cdcdcd;
-  border-radius: 12px;
-  margin: {
-    top: 4px;
-    right: 18px;
-    left: 18px;
-  }
-  background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    width: 423px;
-    height: 4px;
-    margin: {
-      right: 0;
-      left: 0;
-    }
-    border-radius: 5px;
-    background-color: $special-grey;
-  }
-}
-
-.slider__toggle {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 62px;
-  width: 36px;
-  height: 6px;
-  border-radius: 6px;
-  background-color: $basic-green;
-
-  @media (min-width: $tablet-width) {
-    width: 34px;
-    height: 34px;
-    margin: {
-      top: 9px;
-      left: 206px;
-    }
-    top: -10px;
-    z-index: 1;
-    background-image: radial-gradient($basic-green 0, $basic-green 4px, #ffffff 5px, #ffffff 100%);
-    border: 1px solid $special-grey;
-    border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-
-
-    &:hover {
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
-    }
-
-    &:active {
-      border: 1px solid $basic-green;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    }
-  }
-}
-
